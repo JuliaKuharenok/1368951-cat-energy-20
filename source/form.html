@@ -17,11 +17,11 @@
 </header>
 <main class="page-main">
   <h1 class="page-main__title">Подбор программы</h1>
-  <p class="page-main description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-  <section class="page-main__form">
+  <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <section class="page-main__form form">
     <h2 class="visually-hidden">Основные данные</h2>
-    <form class="form__questions" action="https://echo.htmlacademy.ru" method="get">
-      <fieldset questions__cat-info>
+    <form class="form__questions questions" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="questions__cat-info cat-info">
         <ul class="cat-info__list">
           <li class="cat-info__item">
             <input type="text" id="name" placeholder="Барсик">
@@ -37,9 +37,9 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="questions__choose-program">
+      <fieldset class="questions__choose-program choose-program">
         <ul class="choose-program__list">
-          <li class="choose-program__item choose-program">
+          <li class="choose-program__item">
             <input type="radio" id="weight-loss" checked>
             <label for="weight-loss">Похудение</label>
           </li>
@@ -53,7 +53,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="questions__personal-info">
+      <fieldset class="questions__personal-info personal-info">
         <legend class="personal-info__title">Контактные данные (владельца кота)</legend>
         <ul class="personal-info__list">
           <li class="personal-info__item">
@@ -66,12 +66,12 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="questions__comment">
+      <fieldset class="questions__comment comment">
         <legend class="comment__title">Комментарий</legend>
         <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         <label for="comment"></label>
       </fieldset>
-      <fieldset class="questions__addition">
+      <fieldset class="questions__addition addition">
         <legend class="addition__title">Дополнительно</legend>
         <ul class="addition__list">
           <li class="addition__item">
@@ -93,12 +93,12 @@
         </ul>
       </fieldset>
       <button class="form__submit-button button" type="submit">Отправить заявку</button>
-      <p>* — Обязательные поля</p>
+      <small class="form__legend">* — Обязательные поля</small>
     </form>
   </section>
 </main>
 <footer class="page-footer">
-  <section class="page-footer__address">
+  <section class="page-footer__address address">
     <h2 class="visually-hidden">Как нас найти</h2>
     <p class="address__vacancy">Приглашаем к сотрудничеству диллеров</p>
     <p class="address__our-address">ул. Большая Конюшенная, д. 19/8<br>
@@ -110,7 +110,7 @@
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href=""><img src="" alt="Логотип Energy Cat"></a>
     </div>
-    <ul class="page-footer__socials__list">
+    <ul class="page-footer__socials socials">
       <li class="socials__item"><a class="social__link social__link--vk" href=""><img scr="" alt="Вконтакте"></a></li>
       <li class="socials__item"><a class="social__link social__link--instagramm" href=""><img scr="" alt="Инстаграмм"></a></li>
       <li class="socials__item"><a class="social__link social__link--facebook" href=""><img scr="" alt="Фейсбук"></a></li>
