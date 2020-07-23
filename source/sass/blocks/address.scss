@@ -1,0 +1,24 @@
+.address {
+  background-image: url(../img/bg-map-mobile@1x.png);
+  background-size: cover;
+  width: 100%;
+  height: 362px;
+}
+
+.address__vacancy {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.address__our-address {
+  font-family: arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #FFFFFF;
+}
