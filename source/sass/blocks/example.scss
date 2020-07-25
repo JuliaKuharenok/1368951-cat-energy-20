@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $basic-black;
 }
 
 .example__description {
@@ -15,7 +15,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $basic-black;
 }
 
 .example__results {
@@ -29,7 +29,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $basic-black;
 }
 
 .example__results dd {
@@ -37,7 +37,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $special-grey;
 }
 
 .example__expenses {
@@ -46,7 +46,7 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic-black;
 }
 
 .slider__toggle {
@@ -57,5 +57,5 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic-black;
 }

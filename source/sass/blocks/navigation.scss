@@ -1,0 +1,14 @@
+.navigation__toggle {
+  position: relative;
+  border: none;
+  background-color: inherit;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../img/icon-mobile-menu.svg);
+      width: 24px;
+      height: 18px;
+    }
+}

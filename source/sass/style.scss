@@ -1,4 +1,9 @@
 @import "source/fonts/fonts.scss";
+@import "source/sass/variables.scss";
+
+@import "source/sass/blocks/page-body.scss";
+@import "source/sass/blocks/page-header.scss";
+@import "source/sass/blocks/navigation.scss";
 @import "source/sass/blocks/advertising.scss";
 @import "source/sass/blocks/programs.scss";
 @import "source/sass/blocks/principle.scss";
@@ -8,6 +13,14 @@
 @import "source/sass/blocks/page-main.scss";
 @import "source/sass/blocks/primary-goods.scss";
 @import "source/sass/blocks/primary-item.scss";
+@import "source/sass/blocks/more-goods.scss";
+@import "source/sass/blocks/additional-goods.scss";
 @import "source/sass/blocks/additional-item.scss";
+@import "source/sass/blocks/gift-information.scss";
+@import "source/sass/blocks/form.scss";
+@import "source/sass/blocks/questions.scss";
+
+
+
 
 

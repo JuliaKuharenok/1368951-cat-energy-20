@@ -1,0 +1,46 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.button {
+  background-color: $basic-green;
+  border: none;
+  font-family: oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-decoration: none;
+  padding: 7px 44px;
+    &:hover,
+    &:focus {
+    background-color: $basic-dark-green;
+    }
+}
+
+.button:active {
+  background-color: $basic-dark-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--show-more {
+  background: #F2F2F2;
+  color: $special-grey;
+    &:hover,
+    &:focus {
+      background-color: $basic-grey;
+    }
+}
+
+.button--show-more:active {
+  background-color: $basic-grey;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+

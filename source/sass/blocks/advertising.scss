@@ -13,7 +13,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  color: #FFFFFF;
+  color: $basic-white;
 }
 
 .advertising__slogan {
@@ -24,7 +24,7 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
+  color: $basic-white;
   margin-bottom: 330px;
     &::after {
       content: "";
@@ -38,25 +38,5 @@
 }
 
 
-.advertising__get-program {
-  background-color: #68B738;
-  font-family: oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 7px 44px;
-    &:hover,
-    &:focus {
-    background-color: #5EAA2F;
-    }
-}
 
-.advertising__get-program:active {
-  background-color: #5EAA2F;
-  color: rgba(255, 255, 255, 0.3);
-}
 

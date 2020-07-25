@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $basic-black;
 }
 
 .principle__list {
@@ -21,7 +21,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special-grey;
   max-width: 199px;
   margin-bottom: 26px;
   padding-left: 100px;
@@ -35,7 +35,7 @@
       left: 0;
       width: 60px;
       height: 60px;
-      background-color: #68B738;
+      background-color: $basic-green;
     }
 }
 
