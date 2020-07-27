@@ -1,0 +1,19 @@
+.address {
+  background-image: url(../img/bg-map-mobile@1x.png);
+  background-color: $basic-light-grey;
+  background-size: cover;
+  width: 100%;
+  height: 362px;
+}
+
+.address__vacancy {
+  @include font(oswald, 400, 16px, 18px);
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.address__our-address {
+  @include font(arial, 400, 14px, 20px);
+  color: $special-grey;
+  background-color: $basic-white;
+}

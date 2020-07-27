@@ -1,0 +1,75 @@
+.questions fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.questions__list {
+  style-list: none;
+  padding-left: 0;
+}
+
+.questions__title {
+  @include font(oswald, 400, 24px, 26px);
+}
+
+.questions label {
+  @include font(oswald, 400, 16px, 18px);
+  text-transform: uppercase;
+  color: $special-grey;
+}
+
+.questions input {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 51px;
+  border: 1px solid $special-input-grey;
+}
+
+.questions textarea {
+  min-width: 280px;
+  min-height: 150px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 12px;
+  border: 1px solid $special-input-grey;
+  resize: none;
+}
+
+
+.questions input::placeholder,
+.questions textarea::placeholder {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-grey;
+}
+
+.questions input:hover,
+.questions textarea:hover {
+  border: 1px solid $basic-dark-grey;
+}
+
+.questions input:focus {
+  outline: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 50px;
+  border: 2px solid $special-grey;
+}
+
+.questions textarea:focus {
+  outline: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 11px;
+  border: 2px solid $special-grey;
+}
+
+

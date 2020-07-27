@@ -1,0 +1,15 @@
+.primary-item__title a {
+  @include font(oswald, 400, 16px, 20px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  text-decoration: none;
+}
+
+.primary-item__information {
+  @include font(arial, 400, 12px, 16px);
+  color: $special-grey;
+}
+
+
+
+

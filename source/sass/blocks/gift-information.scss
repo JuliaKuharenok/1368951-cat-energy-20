@@ -1,0 +1,21 @@
+.gift-information {
+  position: relative;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  width: 280px;
+  height: 289px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 78px;
+      left: 98px;
+      background-image: url(../img/icon-gift.svg);
+      width: 78px;
+      height: 80px;
+    }
+}
+
+.gift-information__description {
+  @include font(arial, 400, 16px, 20px);
+  color: $basic-white;
+  max-width: 161px;
+}

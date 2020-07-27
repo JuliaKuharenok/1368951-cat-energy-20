@@ -1,0 +1,15 @@
+.additional-item__title {
+  @include font(oswald, 400, 16px, 16px);
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  text-decoration: none;
+}
+
+.additional-item__information {
+  @include font(arial, 400, 14px, 14px);
+  color: $special-grey;
+}
+
+
+
+

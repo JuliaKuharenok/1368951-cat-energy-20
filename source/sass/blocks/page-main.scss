@@ -1,0 +1,8 @@
+.page-main__title {
+  @include font(oswald, 400, 36px, 36px);
+}
+
+.page-main__description {
+  @include font(oswald, 400, 14px, 18px);
+  text-transform: uppercase;
+}

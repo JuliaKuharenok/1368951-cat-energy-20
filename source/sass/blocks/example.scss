@@ -1,0 +1,33 @@
+.example {
+  background-color: $special-background-grey;
+}
+
+.example__title {
+  @include font(oswald, 400, 36px, 40px);
+}
+
+.example__description {
+  @include font(arial, 400, 14px, 18px);
+}
+
+.example__results {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  border-bottom: none;
+}
+
+.example__results dt {
+  @include font(oswald, 400, 24px, 24px);
+}
+
+.example__results dd {
+  @include font(arial, 400, 12px, 12px);
+  color: $special-grey;
+}
+
+.example__expenses {
+  @include font(oswald, 400, 14px, 20px);
+  text-transform: uppercase;
+}
+
+

@@ -1,0 +1,36 @@
+.advertising {
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  width: 320px;
+  height: 305px;
+  background-repeat: no-repeat;
+  padding-bottom: 172px;
+  /* background-color: var(--basic-green1); */
+}
+
+.advertising__title {
+  @include font(oswald, 400, 36px, 36px);
+  text-align: center;
+  color: $basic-white;
+}
+
+.advertising__slogan {
+  position: relative;
+  @include font(oswald, 400, 14px, 14px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-white;
+  margin-bottom: 330px;
+    &::after {
+      content: "";
+      top: 72px;
+      left: 12px;
+      position: absolute;
+      background-image: url(../img/index-can-mobile@1x.png);
+      width: 280px;
+      height: 270px;
+    }
+}
+
+
+
+

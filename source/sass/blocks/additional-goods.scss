@@ -1,0 +1,10 @@
+.additional-goods__title {
+  @include font(oswald, 400, 24px, 24px);
+}
+
+.additional-goods__list {
+  style-list: none;
+  padding-left: 0;
+}
+
+

@@ -1,0 +1,14 @@
+.more-goods__description {
+  @include font(arial, 400, 12px, 16px);
+  color: $special-grey;
+}
+
+.more-goods__description span {
+  @include font(oswald, 400, 16px, 20px);
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+
+
+

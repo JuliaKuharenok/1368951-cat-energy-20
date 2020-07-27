@@ -1,0 +1,6 @@
+.slider__toggle {
+  border: none;
+  background-color: transparent;
+  @include font(oswald, 400, 16px, 20px);
+  text-transform: uppercase;
+}
