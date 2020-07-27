@@ -1,10 +1,6 @@
 .slider__toggle {
   border: none;
   background-color: transparent;
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
-  color: $basic-black;
 }

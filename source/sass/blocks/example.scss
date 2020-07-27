@@ -1,21 +1,13 @@
 .example {
-  background-color: #EAEAEA;
+  background-color: $special-background-grey;
 }
 
 .example__title {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: $basic-black;
+  @include font(oswald, 400, 36px, 40px);
 }
 
 .example__description {
-  font-family: arial;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $basic-black;
+  @include font(arial, 400, 14px, 18px);
 }
 
 .example__results {
@@ -25,28 +17,17 @@
 }
 
 .example__results dt {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: $basic-black;
+  @include font(oswald, 400, 24px, 24px);
 }
 
 .example__results dd {
-  font-family: arial;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
+  @include font(arial, 400, 12px, 12px);
   color: $special-grey;
 }
 
 .example__expenses {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  @include font(oswald, 400, 14px, 20px);
   text-transform: uppercase;
-  color: $basic-black;
 }
 
 

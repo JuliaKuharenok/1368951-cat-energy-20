@@ -1,3 +1,8 @@
+.page__body {
+  min-width: 320px;
+  color: $basic-black;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -6,14 +11,15 @@
   margin: -1px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .button {
   background-color: $basic-green;
   border: none;
-  font-family: oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(oswald, 400, 14px, 18px);
   text-transform: uppercase;
   color: $basic-white;
   text-decoration: none;

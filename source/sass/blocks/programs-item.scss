@@ -40,24 +40,16 @@
 }
 
 .programs-item__title {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
+  @include font(oswald, 400, 24px, 37px);
   text-transform: uppercase;
-  color: $basic-black;
   margin: 0;
   padding-left: 71px;
 }
 
 .programs-item__description {
-  font-family: arial;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(arial, 400, 14px, 18px);
   color: $special-grey;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid $special-border-grey;
   margin: 0;
 }
 
@@ -71,7 +63,7 @@
   color: $basic-black;
   text-decoration: none;
     &:active {
-      color: #CDCDCD;
+      color: $basic-dark-grey;
     }
 }
 

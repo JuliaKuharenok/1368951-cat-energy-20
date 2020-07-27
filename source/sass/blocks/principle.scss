@@ -3,11 +3,7 @@
 }
 
 .principle__title {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  color: $basic-black;
+  @include font(oswald, 400, 36px, 40px);
 }
 
 .principle__list {
@@ -17,10 +13,7 @@
 
 .principle__item {
   position: relative;
-  font-family: arial;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(arial, 400, 14px, 18px);
   color: $special-grey;
   max-width: 199px;
   margin-bottom: 26px;

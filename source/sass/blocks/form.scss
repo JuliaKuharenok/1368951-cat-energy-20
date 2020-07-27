@@ -1,8 +1,3 @@
 .form__legend {
-  font-family: arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: $basic-black;
+  @include font(arial, 400, 14px, 16px);
 }

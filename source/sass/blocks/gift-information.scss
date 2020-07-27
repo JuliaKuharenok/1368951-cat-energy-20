@@ -15,10 +15,7 @@
 }
 
 .gift-information__description {
-  font-family: arial;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(arial, 400, 16px, 20px);
   color: $basic-white;
   max-width: 161px;
 }

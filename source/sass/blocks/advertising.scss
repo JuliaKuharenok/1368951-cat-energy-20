@@ -4,24 +4,18 @@
   height: 305px;
   background-repeat: no-repeat;
   padding-bottom: 172px;
-  //* background-color: var(--basic-green1); *//
+  /* background-color: var(--basic-green1); */
 }
 
 .advertising__title {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include font(oswald, 400, 36px, 36px);
   text-align: center;
   color: $basic-white;
 }
 
 .advertising__slogan {
   position: relative;
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  @include font(oswald, 400, 14px, 14px);
   text-transform: uppercase;
   text-align: center;
   color: $basic-white;

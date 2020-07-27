@@ -10,18 +10,11 @@
 }
 
 .questions__title {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: $basic-black;
+  @include font(oswald, 400, 24px, 26px);
 }
 
 .questions label {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  @include font(oswald, 400, 16px, 18px);
   text-transform: uppercase;
   color: $special-grey;
 }
@@ -31,7 +24,7 @@
   padding-bottom: 13px;
   padding-left: 15px;
   padding-right: 51px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid $special-input-grey;
 }
 
 .questions textarea {
@@ -41,7 +34,7 @@
   padding-bottom: 13px;
   padding-left: 15px;
   padding-right: 12px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid $special-input-grey;
   resize: none;
 }
 

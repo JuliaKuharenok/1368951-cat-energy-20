@@ -1,18 +1,12 @@
 .more-goods__description {
-  font-family: arial;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  @include font(arial, 400, 12px, 16px);
   color: $special-grey;
 }
 
 .more-goods__description span {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
-  color: $basic-black;
+  color: $special-black;
 }
 
 
