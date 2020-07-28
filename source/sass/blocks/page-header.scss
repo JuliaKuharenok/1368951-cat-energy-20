@@ -1,0 +1,43 @@
+.page-header__logo {
+  height: 38px;
+}
+
+.page-header__navigation {
+  max-width: 25px;
+}
+
+.page-header {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 708px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .page-header__logo {
+    height: 52px;
+  }
+  .page-header__navigation {
+    max-width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+      width: 1230px;
+      margin-left: 110px;
+      margin-right: 110px;
+    }
+    .page-header__logo {
+      height: 59px;
+    }
+    .page-header__navigation {
+      max-width: 478px;
+    }
+}

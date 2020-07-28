@@ -6,3 +6,9 @@
   @include font(oswald, 400, 14px, 18px);
   text-transform: uppercase;
 }
+
+.page-main__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}

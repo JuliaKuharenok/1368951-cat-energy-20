@@ -4,13 +4,14 @@
   height: 305px;
   background-repeat: no-repeat;
   padding-bottom: 172px;
-  /* background-color: var(--basic-green1); */
+  /* background-color: $basic-green; */
 }
 
 .advertising__title {
   @include font(oswald, 400, 36px, 36px);
   text-align: center;
   color: $basic-white;
+  margin: 0;
 }
 
 .advertising__slogan {
@@ -29,6 +30,42 @@
       width: 280px;
       height: 270px;
     }
+}
+
+.advertising__get-program {
+  width: 100%;
+  padding: 7px 73px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertising {
+  padding-bottom: 526px;
+  background: none;
+  }
+  .advertising__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    min-width: 414px;
+  }
+  .advertising__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    margin-bottom: 49px;
+      &::after {
+        content: "";
+        top: 9px;
+        left: 12px;
+        position: absolute;
+        z-index: -1;
+        background-image: url(../img/index-can-tablet@1x.jpg);
+        width: 709px;
+        height: 609px;
+    }
+  }
 }
 
 
