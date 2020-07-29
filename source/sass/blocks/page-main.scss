@@ -1,5 +1,6 @@
 .page-main__title {
   @include font(oswald, 400, 36px, 36px);
+  margin: 0;
 }
 
 .page-main__description {
@@ -7,8 +8,33 @@
   text-transform: uppercase;
 }
 
-.page-main__container {
+.page-main__wrapper {
   width: 280px;
   margin: 0 auto;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    width: 708px;
+  }
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .page-main__description {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__wrapper {
+     width: 1230px;
+  }
+  .page-main__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }

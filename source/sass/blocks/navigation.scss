@@ -34,5 +34,13 @@
   .navigation__list {
     display: flex;
   }
+  .navigation__item {
+    margin-left: 33px;
+      &:first-child {
+        margin-left: 0;
+      }
+  }
 }
+
+
 

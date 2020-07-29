@@ -2,16 +2,18 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy:Анкета для выбора программы Cat Energy</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
 <header class="page-header">
+  <div class="page-header__wrapper">
   <a class="page-header__logo">
     <img src="img/logo-mobile.svg" width="190px" height="38px" alt="Логотип Cat Energy">
   </a>
   <nav class="page-header__navigation navigation">
-    <ul class="navigation__list visually-hidden">
+    <ul class="navigation__list">
       <li class="navigation__item">
         <a href="index.html">Главная</a>
       </li>
@@ -26,13 +28,16 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
   </nav>
+  </div>
 </header>
 <main class="page-main">
+  <div class="page-main__wrapper">
   <h1 class="page-main__title">Подбор программы</h1>
   <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <section class="page-main__form form">
     <h2 class="visually-hidden">Основные данные</h2>
     <form class="form__questions questions" action="https://echo.htmlacademy.ru" method="post">
+      <div class="questions__container">
       <fieldset class="questions__cat-info">
         <ul class="questions__list">
           <li class="questions__item">
@@ -65,6 +70,7 @@
           </li>
         </ul>
       </fieldset>
+      </div>
       <fieldset class="questions__personal-info">
         <legend class="questions__title">Контактные данные (владельца кота)</legend>
         <ul class="questions__list">
@@ -108,6 +114,7 @@
       <small class="form__legend">* — Обязательные поля</small>
     </form>
   </section>
+  </div>
 </main>
 <footer class="page-footer">
   <section class="page-footer__address address">
