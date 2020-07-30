@@ -139,3 +139,47 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+  .programs-item {
+    width: 467px;
+    position: relative;
+    padding-top: 77px;
+    padding-right: 51px;
+    padding-bottom: 59px;
+    padding-left: 52px;
+    margin-bottom: 71px;
+      &--lose-weight::before,
+      &--gain-weight::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 44px;
+        width: 100px;
+        height: 100px;
+        background-color: $basic-green;
+        border-radius: 50%;
+      }
+    }
+    .programs-item--lose-weight::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 64px;
+      background-image: url("../img/icon-cat-slim.svg");
+      width: 70px;
+      height: 97px;
+    }
+    .programs-item--gain-weight::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 15px;
+      background-image: url("../img/icon-cat-pro.svg");
+      width: 134px;
+      height: 56px;
+    }
+  .programs-item__title {
+    padding-left: 162px;
+  }
+}

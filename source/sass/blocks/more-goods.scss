@@ -7,6 +7,8 @@
   @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
   color: $special-black;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,8 +16,6 @@
     border: 2px solid #D3D3D3;
     width: 324px;
     height: 430px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   }

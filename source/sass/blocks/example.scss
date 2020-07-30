@@ -10,10 +10,16 @@
   @include font(arial, 400, 14px, 18px);
 }
 
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .example__results {
   border: 1px solid #CDCDCD;
   border-radius: 3px;
   border-bottom: none;
+  width: 124px;
 }
 
 .example__results dt {
@@ -28,6 +34,51 @@
 .example__expenses {
   @include font(oswald, 400, 14px, 20px);
   text-transform: uppercase;
+  text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .example__results {
+    width: 162px;
+  }
+  .example__results dt {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .example__results dd {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .example__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .example__expenses {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 134px;
+  }
+  .example__container {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+
 
 

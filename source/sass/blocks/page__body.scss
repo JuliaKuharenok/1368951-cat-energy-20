@@ -54,4 +54,14 @@ img {
   color: rgba(68, 68, 68, 0.3);
 }
 
+@media (min-width: $desktop-width) {
+  .page__body {
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    width: 720px;
+    height: 696px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
 

@@ -10,6 +10,15 @@
   color: $special-grey;
 }
 
+.primary-item__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-item__container {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .primary-item {
     display: flex;
