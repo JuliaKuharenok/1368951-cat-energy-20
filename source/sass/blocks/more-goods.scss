@@ -7,6 +7,37 @@
   @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
   color: $special-black;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods {
+    border: 2px solid #D3D3D3;
+    width: 324px;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+  }
+  .more-goods__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .more-goods__description span {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-goods {
+    width: 245px;
+    height: 431px;
+  }
 }
 
 

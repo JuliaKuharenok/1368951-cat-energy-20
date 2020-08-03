@@ -1,6 +1,11 @@
 .page__body {
+  margin: 0;
   min-width: 320px;
   color: $basic-black;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .visually-hidden {
@@ -48,5 +53,16 @@ img {
   background-color: $basic-grey;
   color: rgba(68, 68, 68, 0.3);
 }
+
+/*@media (min-width: $desktop-width) {
+  .page__body {
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    width: 720px;
+    height: 696px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+*/
 
 

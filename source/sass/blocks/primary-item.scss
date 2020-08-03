@@ -10,6 +10,48 @@
   color: $special-grey;
 }
 
+.primary-item__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-item__container {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .primary-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $basic-light-grey;
+    width: 324px;
+    height: 430px;
+  }
+  .primary-item__title a {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 174px;
+  }
+  .primary-item__information {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .primary-item {
+    width: 245px;
+    height: 431px;
+  }
+  .primary-item__title a {
+    font-size: 20px;
+    line-height: 21px;
+    max-width: 145px;
+  }
+}
+
 
 
 

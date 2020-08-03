@@ -10,6 +10,40 @@
   color: $special-grey;
 }
 
+@media (min-width: $tablet-width)  {
+  .additional-item {
+    border: 1px solid #CDCDCD;
+    height: 140px;
+    width: 100%;
+  }
+  .additional-item__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .additional-item__information {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .additional-item__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width)  {
+  .additional-item {
+    border: 1px solid #CDCDCD;
+    border-left: none;
+    border-right: none;
+    height: 72px;
+    width: 895px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
 
 
 

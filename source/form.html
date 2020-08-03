@@ -2,16 +2,18 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy:Анкета для выбора программы Cat Energy</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
 <header class="page-header">
+  <div class="page-header__wrapper">
   <a class="page-header__logo">
     <img src="img/logo-mobile.svg" width="190px" height="38px" alt="Логотип Cat Energy">
   </a>
   <nav class="page-header__navigation navigation">
-    <ul class="navigation__list visually-hidden">
+    <ul class="navigation__list">
       <li class="navigation__item">
         <a href="index.html">Главная</a>
       </li>
@@ -26,13 +28,16 @@
       <span class="visually-hidden">Открыть меню</span>
     </button>
   </nav>
+  </div>
 </header>
 <main class="page-main">
+  <div class="page-main__wrapper">
   <h1 class="page-main__title">Подбор программы</h1>
   <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <section class="page-main__form form">
     <h2 class="visually-hidden">Основные данные</h2>
     <form class="form__questions questions" action="https://echo.htmlacademy.ru" method="post">
+      <div class="questions__container">
       <fieldset class="questions__cat-info">
         <ul class="questions__list">
           <li class="questions__item">
@@ -65,6 +70,7 @@
           </li>
         </ul>
       </fieldset>
+      </div>
       <fieldset class="questions__personal-info">
         <legend class="questions__title">Контактные данные (владельца кота)</legend>
         <ul class="questions__list">
@@ -104,23 +110,29 @@
           </li>
         </ul>
       </fieldset>
+      <div class="page-main__legend-container">
       <button class="form__submit-button button" type="submit">Отправить заявку</button>
       <small class="form__legend">* — Обязательные поля</small>
+      </div>
     </form>
   </section>
+  </div>
 </main>
 <footer class="page-footer">
   <section class="page-footer__address address">
     <h2 class="visually-hidden">Как нас найти</h2>
     <div class="address__our-address">
+      <div class="address__wrapper">
       <p class="address__vacancy">Приглашаем к сотрудничеству диллеров!</p>
       <p>ул. Большая Конюшенная, д. 19/8<br>
         Санкт-Петербург</p>
+      </div>
     </div>
   </section>
   <section class="page-footer__contacts">
-    <h2 class="visually-hidden">Контакты</h2>
     <div class="page-footer__wrapper">
+    <h2 class="visually-hidden">Контакты</h2>
+    <div>
       <a class="page-footer__logo" href=""><img src="img/logo-footer.svg" width="128px" height="24px" alt="Логотип Energy Cat"></a>
     </div>
     <ul class="page-footer__socials socials">
@@ -128,9 +140,10 @@
       <li class="socials__item"><a class="socials__link social__link--instagram" href=""><img src="img/icon-insta.svg" width="20px" height="20px" alt="Инстаграмм"></a></li>
       <li class="socials__item"><a class="socials__link social__link--facebook" href=""><img src="img/icon-fb.svg" width="10px" height="17px" alt="Фейсбук"></a></li>
     </ul>
-    <div class="page-footer__wrapper">
+    <div class="page-footer__developed">
       <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="27px" height="34px" alt="Логотип HTML Academy"></a>
+    </div>
     </div>
   </section>
 </footer>

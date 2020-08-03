@@ -2,3 +2,21 @@
   list-style: none;
   padding-left: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .primary-goods__list {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 60px;
+   row-gap: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .primary-goods__list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 80px;
+   row-gap: 143px;
+  }
+}

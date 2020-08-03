@@ -17,3 +17,39 @@
   color: $special-grey;
   background-color: $basic-white;
 }
+
+.address__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (min-width: $tablet-width) {
+  .address {
+    background-image: url(../img/bg-map-tablet@1x.png);
+  }
+  .address__wrapper {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: relative;
+    background-image: url(../img/bg-map-desktop@1x.png);
+  }
+  .address__vacancy {
+    max-width: 163px;
+  }
+  .address__our-address {
+    position: absolute;
+    top: 60px;
+    left: 105px;
+    width: 570px;
+    height: 201px;
+  }
+}
+

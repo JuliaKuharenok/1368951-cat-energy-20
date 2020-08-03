@@ -1,3 +1,17 @@
+.navigation__list {
+  display: none;
+  @include font(oswald, 400, 18px, 24px);
+  text-transform: uppercase;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navigation__item a {
+  color: $basic-black;
+  text-decoration: none;
+}
+
 .navigation__toggle {
   position: relative;
   border: none;
@@ -12,3 +26,26 @@
       height: 18px;
     }
 }
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
+  .navigation__list {
+    display: flex;
+  }
+  .navigation__item {
+    margin-left: 33px;
+      &:first-child {
+        margin-left: 0;
+      }
+  }
+}
+
+/*@media (min-width: $desktop-width) {
+  .navigation__item a {
+    color: $basic-white;
+  }
+}
+*/
+
