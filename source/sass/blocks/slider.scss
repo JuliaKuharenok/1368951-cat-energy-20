@@ -1,6 +1,35 @@
 .slider__toggle {
+  position: relative;
   border: none;
   background-color: transparent;
   @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
+  padding: 0;
+    &--current::after {
+      position: absolute;
+      content: "";
+      top: 3px;
+      left: 54px;
+      width: 83px;
+      height: 12px;
+      background: $basic-white;
+      border: 1px solid $basic-dark-grey;
+      border-radius: 6px;
+    }
+    &--current::before {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      top: 7px;
+      left: 61px;
+      width: 35px;
+      height: 6px;
+      background: $basic-green;
+      border-radius: 6px;
+    }
 }
+
+
+
+
+

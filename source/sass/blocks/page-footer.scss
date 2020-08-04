@@ -10,9 +10,32 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.page-footer__logo {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  padding-top: 40px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 94px;
+      left: -75px;
+      width: 280px;
+      height: 1px;
+      background-color: $special-border-grey;
+    }
+}
+
 .page-footer__developed {
   display: flex;
   justify-content: space-between;
+  margin-top: -60px;
+}
+
+.page-footer__developed a {
+  @include font(arial, 400, 16px, 18px);
+  color: $basic-black;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {

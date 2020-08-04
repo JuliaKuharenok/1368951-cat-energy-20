@@ -19,8 +19,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
+      top: -1px;
+      left: -12px;
       background-image: url(../img/icon-mobile-menu.svg);
       width: 24px;
       height: 18px;

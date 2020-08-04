@@ -1,10 +1,11 @@
 .advertising {
   background-image: url(../img/index-background-mobile@1x.jpg);
-  width: 320px;
+  background-position: 50% 0%;
+  width: 280px;
   height: 305px;
   background-repeat: no-repeat;
-  padding-bottom: 172px;
-  /* background-color: $basic-green; */
+  margin-bottom: 172px;
+  background-color: $basic-green;
 }
 
 .advertising__title {
@@ -12,6 +13,8 @@
   text-align: center;
   color: $basic-white;
   margin: 0;
+  margin-bottom: 25px;
+  padding-top: 27px;
 }
 
 .advertising__slogan {
@@ -20,11 +23,11 @@
   text-transform: uppercase;
   text-align: center;
   color: $basic-white;
-  margin-bottom: 330px;
+  margin-bottom: 313px;
     &::after {
       content: "";
-      top: 72px;
-      left: 12px;
+      top: 41px;
+      left: 0px;
       position: absolute;
       background-image: url(../img/index-can-mobile@1x.png);
       width: 280px;
@@ -34,7 +37,7 @@
 
 .advertising__get-program {
   width: 100%;
-  padding: 7px 73px;
+  padding: 9px 73px;
 }
 
 @media (min-width: $tablet-width) {

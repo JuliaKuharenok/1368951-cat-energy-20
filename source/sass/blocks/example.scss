@@ -1,13 +1,19 @@
 .example {
   background-color: $special-background-grey;
+  padding-top: 27px;
+  padding-bottom: 36px;
 }
 
 .example__title {
   @include font(oswald, 400, 36px, 40px);
+  margin: 0;
+  margin-bottom: 33px;
 }
 
 .example__description {
   @include font(arial, 400, 14px, 18px);
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .example__wrapper {
@@ -19,22 +25,41 @@
   border: 1px solid #CDCDCD;
   border-radius: 3px;
   border-bottom: none;
-  width: 124px;
+  text-align: center;
+  width: 122px;
+  margin: 0;
 }
 
 .example__results dt {
   @include font(oswald, 400, 24px, 24px);
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 8px;
 }
 
 .example__results dd {
   @include font(arial, 400, 12px, 12px);
   color: $special-grey;
+  margin: 0;
+  margin-left: 20px;
+  max-width: 80px;
 }
 
 .example__expenses {
   @include font(oswald, 400, 14px, 20px);
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 42px;
+}
+
+.example__toggles {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 44px;
+  margin-right: 39px;
 }
 
 @media (min-width: $tablet-width) {
