@@ -20,7 +20,7 @@
 
 .navigation__toggle {
   position: absolute;
-  top: -40px;
+  top: -57px;
   left: 255px;
   position: relative;
   border: none;
@@ -77,9 +77,13 @@
   }
   .navigation__list {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 42px;
   }
   .navigation__item {
-    margin-left: 33px;
+    border-top: none;
+    padding: 0;
+    margin-left: 35px;
       &:first-child {
         margin-left: 0;
       }

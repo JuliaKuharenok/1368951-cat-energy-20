@@ -42,30 +42,40 @@
 
 @media (min-width: $tablet-width) {
   .advertising {
-  padding-bottom: 526px;
+  padding-bottom: 308px;
+  padding-left: 88px;
+  padding-top: 59px;
   background: none;
   }
   .advertising__title {
+    text-align: left;
     font-size: 60px;
     line-height: 60px;
     color: $basic-black;
     min-width: 414px;
+    padding-top: 0;
   }
   .advertising__slogan {
+    min-width: 283px;
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
-    margin-bottom: 49px;
+    margin-top: 41px;
+    margin-bottom: 71px;
       &::after {
         content: "";
-        top: 9px;
-        left: 12px;
+        top: 39px;
+        left: -89px;
         position: absolute;
         z-index: -1;
         background-image: url(../img/index-can-tablet@1x.jpg);
         width: 709px;
         height: 609px;
     }
+  }
+  .advertising__get-program {
+    padding: 12px 26px;
+    margin-left: -6px;
   }
 }
 

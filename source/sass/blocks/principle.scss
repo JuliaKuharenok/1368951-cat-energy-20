@@ -77,22 +77,24 @@
 
 @media (min-width: $tablet-width) {
   .principle {
-    padding-bottom: 104px;
+    padding-bottom: 76px;
+    border-bottom: 1px solid #E6E6E6;
+    padding-top: 39px;
+    margin-bottom: 0;
   }
   .principle__title {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 186px;
+    margin-bottom: 183px;
   }
   .principle__list {
     list-style: none;
     padding-left: 0;
-    margin-left: 30px;
-    margin-right: 109px;
+    margin-left: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 182px;
-    row-gap: 245px;
+    column-gap: 60px;
+    row-gap: 220px;
   }
   .principle__item {
     position: relative;

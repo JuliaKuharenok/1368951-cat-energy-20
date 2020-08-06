@@ -1,6 +1,5 @@
 .page-header__logo {
   height: 38px;
-  margin-bottom: 17px;
 }
 
 .page-header__wrapper {
@@ -15,6 +14,7 @@
 @media (min-width: $tablet-width) {
   .page-header__logo {
     height: 52px;
+    margin-top: 29px;
   }
   .page-header__navigation {
     max-width: 440px;
@@ -35,6 +35,6 @@
     max-width: 478px;
   }
   .page-header__wrapper {
-    width: 1080px;
+    width: 1220px;
   }
 }

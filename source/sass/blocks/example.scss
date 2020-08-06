@@ -63,16 +63,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: $basic-white;
+    padding-top: 43px;
+  }
   .example__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 64px;
   }
   .example__description {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 53px;
   }
   .example__results {
-    width: 162px;
+    width: 161px;
+    margin-right: 41px;
   }
   .example__results dt {
     font-size: 30px;
@@ -81,6 +88,9 @@
   .example__results dd {
     font-size: 14px;
     line-height: 14px;
+    max-width: 142px;
+    margin-left: 9px;
+    margin-top: 4px;
   }
   .example__container {
     display: flex;
@@ -88,7 +98,10 @@
   }
   .example__expenses {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 25px;
+    max-width: 174px;
+    text-align: right;
+    margin-top: 11px;
   }
 }
 
