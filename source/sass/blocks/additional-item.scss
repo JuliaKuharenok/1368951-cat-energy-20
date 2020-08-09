@@ -3,6 +3,7 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   text-decoration: none;
+  margin: 0;
 }
 
 .additional-item__information {
@@ -13,20 +14,35 @@
 @media (min-width: $tablet-width)  {
   .additional-item {
     border: 1px solid #CDCDCD;
-    height: 140px;
-    width: 100%;
+    /*height: 140px;*/
+    /*width: 100%;*/
+    padding-top: 25px;
+    padding-left: 38px;
+    padding-right: 34px;
+    padding-bottom: 25px;
   }
   .additional-item__title {
     font-size: 20px;
     line-height: 20px;
+    padding-top: 0;
   }
   .additional-item__information {
     font-size: 16px;
     line-height: 20px;
+    border-spacing: 46px;
+    margin-top: -44px;
+    margin-right: -42px;
   }
   .additional-item__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+  .additional-item__order-button {
+    font-size: 16px;
+    line-height: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 8px 285px;
   }
 }
 

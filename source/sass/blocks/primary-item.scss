@@ -23,20 +23,47 @@
   .primary-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     background-color: $basic-light-grey;
-    width: 324px;
-    height: 430px;
+    /*width: 324px;*/
+    /*height: 430px;*/
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-left: 39px;
+    padding-top: 88px;
   }
+  .primary-item__title {
+    max-width: 159px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
   .primary-item__title a {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 23px;
     max-width: 174px;
   }
   .primary-item__information {
     font-size: 16px;
     line-height: 16px;
+    width: 100%;
+    margin-bottom: 19px;
+  }
+  .primary-item__information tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $basic-dark-grey;
+    padding-bottom: 4px;
+  }
+  .primary-item__order-button {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 11px 0;
   }
 }
 
