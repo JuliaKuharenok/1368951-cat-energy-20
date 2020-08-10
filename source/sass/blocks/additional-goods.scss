@@ -1,19 +1,31 @@
 .additional-goods__title {
   @include font(oswald, 400, 24px, 24px);
   margin: 0;
+  margin-bottom: 35px;
 }
 
 .additional-goods__list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 @media (min-width: $tablet-width) {
   .additional-goods__title {
-  font-size: 36px;
-  line-height: 36px;
-  margin-left: 37px;
-  margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 37px;
+    margin-bottom: 80px;
+  }
+  .additional-goods {
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods__title {
+    margin-left: 0;
   }
 }
 

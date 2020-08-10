@@ -16,7 +16,7 @@
 .address__our-address {
   @include font(arial, 400, 14px, 20px);
   color: $special-grey;
-  background-color: $basic-white;
+  background-color: $basic-light-grey;
 }
 
 .address__our-address p {
@@ -40,6 +40,13 @@
   }
   .address__wrapper {
     width: 708px;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .address__vacancy {
+    max-width: 171px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 

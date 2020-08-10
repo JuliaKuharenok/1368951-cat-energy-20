@@ -90,10 +90,16 @@
   }
 }
 
-/*@media (min-width: $desktop-width) {
-  .navigation__item a {
+@media (min-width: $desktop-width) {
+  /*.navigation__item a {
     color: $basic-white;
+  }*/
+  .navigation__list {
+    margin-top: 73px;
+    font-size: 20px;
+    line-height: 30px;
   }
+
 }
-*/
+
 
