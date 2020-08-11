@@ -1,13 +1,14 @@
 .page-main__title {
   @include font(oswald, 400, 36px, 36px);
   margin: 0;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #EBEBEB;
+  margin-bottom: 38px;
 }
 
 .page-main__description {
   @include font(oswald, 400, 14px, 18px);
   text-transform: uppercase;
+  margin: 0;
+  max-width: 226px;
 }
 
 .page-main__wrapper {
@@ -30,13 +31,15 @@
     line-height: 60px;
     margin-top: 60px;
     margin-bottom: 164px;
-    padding-bottom: 0;
-    border-bottom: none;
+      &--form {
+        margin-bottom: 56px;
+      }
   }
   .page-main__description {
     font-size: 20px;
     line-height: 30px;
     max-width: 323px;
+    margin-left: 40px;
   }
   .page-main__legend-container {
     display: flex;
@@ -51,5 +54,8 @@
   .page-main__container {
     display: flex;
     justify-content: space-between;
+  }
+  .page-main__description {
+    margin-left: 0;
   }
 }

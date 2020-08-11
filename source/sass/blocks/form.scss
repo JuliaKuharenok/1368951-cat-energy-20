@@ -1,3 +1,41 @@
 .form__legend {
   @include font(arial, 400, 14px, 16px);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form__submit-button {
+  @include font(oswald, 400, 16px, 20px);
+  padding: 10px 0;
+}
+
+.form {
+  padding-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin-left: 40px;
+    margin-right: 37px;
+    padding-bottom: 72px;
+  }
+
+  .form__legend {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 16px;
+    margin-left: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 82px;
+  }
+
+  .form__legend {
+    margin-left: 85px;
+  }
 }
