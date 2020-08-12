@@ -37,16 +37,23 @@
 @media (min-width: $tablet-width) {
   .address {
     background-image: url(../img/bg-map-tablet@1x.png);
+    height: 603px;
   }
   .address__wrapper {
-    width: 708px;
+    width: 626px;
+    margin: 0 auto;
     justify-content: space-between;
     padding: 0;
+    padding-top: 69px;
+    padding-bottom: 66px;
   }
   .address__vacancy {
-    max-width: 171px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .address__our-address p {
+    max-width: 171px;
   }
 }
 
@@ -54,16 +61,27 @@
   .address {
     position: relative;
     background-image: url(../img/bg-map-desktop@1x.png);
+    height: 400px;
   }
   .address__vacancy {
     max-width: 163px;
   }
-  .address__our-address {
+  /*.address__our-address {
     position: absolute;
     top: 60px;
     left: 105px;
     width: 570px;
     height: 201px;
+  }*/
+
+  .address__wrapper {
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 420px;
+    background-color: $basic-white;
+    padding-left: 77px;
+    padding-right: 73px;
   }
 }
 

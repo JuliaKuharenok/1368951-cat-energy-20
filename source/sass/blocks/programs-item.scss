@@ -154,13 +154,13 @@
     padding-right: 51px;
     padding-bottom: 59px;
     padding-left: 52px;
-    margin-bottom: 71px;
+    margin-bottom: 6px;
       &--lose-weight::before,
       &--gain-weight::before {
         content: "";
         position: absolute;
-        top: 10px;
-        left: 44px;
+        top: 47px;
+        left: 52px;
         width: 100px;
         height: 100px;
         background-color: $basic-green;
@@ -170,8 +170,8 @@
     .programs-item--lose-weight::after {
       content: "";
       position: absolute;
-      top: 7px;
-      left: 64px;
+      top: 41px;
+      left: 67px;
       background-image: url("../img/icon-cat-slim.svg");
       width: 70px;
       height: 97px;
@@ -179,13 +179,20 @@
     .programs-item--gain-weight::after {
       content: "";
       position: absolute;
-      top: 30px;
-      left: 15px;
+      top: 67px;
+      left: 34px;
       background-image: url("../img/icon-cat-pro.svg");
       width: 134px;
       height: 56px;
     }
   .programs-item__title {
     padding-left: 162px;
+    margin-bottom: 74px;
+  }
+  .programs-item__description {
+    margin-bottom: 26px;
+  }
+  .programs-item__link::after {
+    left: 137px;
   }
 }

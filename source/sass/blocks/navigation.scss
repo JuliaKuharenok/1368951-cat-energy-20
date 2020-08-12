@@ -32,7 +32,7 @@
 .navigation--closed .navigation__toggle::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 19px;
   left: 0px;
   background-image: url(../img/icon-mobile-menu.svg);
   width: 24px;
@@ -44,7 +44,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 26px;
     left: 0px;
     width: 25px;
     height: 2px;
@@ -91,9 +91,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  /*.navigation__item a {
+  .navigation__item--index a {
     color: $basic-white;
-  }*/
+  }
   .navigation__list {
     margin-top: 73px;
     font-size: 20px;

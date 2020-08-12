@@ -161,7 +161,10 @@
   .principle__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 98px;
+    column-gap: 80px;
+  }
+  .principle {
+    border-bottom: none;
   }
 }
 

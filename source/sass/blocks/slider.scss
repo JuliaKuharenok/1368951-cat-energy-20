@@ -29,7 +29,12 @@
     }
 }
 
-
+@media (min-width: $tablet-width) {
+  .slider__item {
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 
 

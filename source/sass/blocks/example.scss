@@ -110,11 +110,31 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 134px;
+      padding-top: 23px;
   }
   .example__container {
       display: flex;
       flex-direction: column;
     }
+  .example__title {
+    margin-bottom: 147px;
+  }
+  .example__description {
+    max-width: 436px;
+    margin-bottom: 68px;
+  }
+  .example__wrapper {
+    justify-content: start;
+  }
+  .example__expenses {
+    max-width: max-content;
+    text-align: left;
+    margin-top: 52px;
+    margin-bottom: 37px;
+      & span {
+        margin-left: 59px;
+      }
+  }
 }
 
 
