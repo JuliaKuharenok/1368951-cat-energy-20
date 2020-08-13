@@ -21,14 +21,15 @@
 
 .address__our-address p {
   margin: 0;
-  min-width: 140px;
+  max-width: 140px;
 }
 
 .address__wrapper {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
   padding: 0;
   display: flex;
+  justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 24px;
 }
@@ -40,7 +41,7 @@
     height: 603px;
   }
   .address__wrapper {
-    width: 626px;
+    width: 88.4%;
     margin: 0 auto;
     justify-content: space-between;
     padding: 0;
@@ -66,13 +67,6 @@
   .address__vacancy {
     max-width: 163px;
   }
-  /*.address__our-address {
-    position: absolute;
-    top: 60px;
-    left: 105px;
-    width: 570px;
-    height: 201px;
-  }*/
 
   .address__wrapper {
     position: absolute;

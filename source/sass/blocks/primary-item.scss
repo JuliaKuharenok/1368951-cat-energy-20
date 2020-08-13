@@ -13,6 +13,8 @@
 }
 
 .primary-item {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-top: 20px;
   padding-bottom: 34px;
@@ -42,22 +44,20 @@
 }
 
 .primary-item__order-button {
-  padding: 9px 113px;
+  padding: 9px 0;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .primary-item {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
     background-color: $basic-light-grey;
-    /*width: 324px;*/
-    /*height: 430px;*/
+    min-width: 324px;
+    box-sizing: border-box;
     padding-right: 37px;
     padding-bottom: 40px;
     padding-left: 39px;
-    padding-top: 88px;
+    padding-top: 158px; /* temporary measure*/
     border: none;
   }
   .primary-item__title {
@@ -96,6 +96,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .primary-item {
+    min-width: 245px;
+  }
+
   .primary-item__title a {
     font-size: 20px;
     line-height: 21px;

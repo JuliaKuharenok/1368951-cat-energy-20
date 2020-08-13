@@ -28,8 +28,9 @@
 }
 
 .questions textarea {
-  width: 251px;
-  height: 122px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 15px;
@@ -134,8 +135,7 @@
     padding-right: 20px;
   }
   .questions textarea {
-    min-width: 591px;
-    min-height: 152px;
+    min-height: 174px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 19px;
@@ -218,10 +218,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;
-  }
-
-  .questions textarea {
-    width: 1179px;
   }
 
   .questions__container {

@@ -1,4 +1,6 @@
 .additional-item {
+  display: flex;
+  flex-direction: column;
   padding-top: 13px;
   border-top: 1px solid #CDCDCD;
   padding-bottom: 28px;
@@ -20,18 +22,17 @@
 }
 
 .additional-item__order-button {
-  padding: 9px 114px;
+  padding: 9px 0;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width)  {
   .additional-item {
     border: 1px solid #CDCDCD;
-    /*height: 140px;*/
-    /*width: 100%;*/
     padding-top: 25px;
     padding-left: 38px;
     padding-right: 34px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
   }
   .additional-item__title {
     font-size: 20px;
@@ -41,9 +42,6 @@
   .additional-item__information {
     font-size: 16px;
     line-height: 20px;
-    border-spacing: 46px;
-    margin-top: -44px;
-    margin-right: -42px;
   }
   .additional-item__wrapper {
     display: flex;
@@ -54,7 +52,7 @@
     line-height: 14px;
     text-align: center;
     width: 100%;
-    padding: 8px 285px;
+    padding: 12px 0;
   }
 }
 
@@ -67,6 +65,7 @@
     height: 72px;
     width: 895px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-top: 25px;
     padding-left: 0;

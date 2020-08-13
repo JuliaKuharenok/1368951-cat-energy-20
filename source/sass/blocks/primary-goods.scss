@@ -9,9 +9,10 @@
   .primary-goods__list {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   column-gap: 56px;
-   row-gap: 124px;
-   margin-bottom: 61px;
+   justify-items: center;
+   column-gap: 8%;
+   row-gap: 143px;
+   margin-bottom: 66px;
   }
 }
 
@@ -19,7 +20,7 @@
   .primary-goods__list {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   column-gap: 77px;
+   column-gap: 6.3%;
    row-gap: 132px;
   }
 }
