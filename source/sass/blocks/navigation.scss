@@ -109,7 +109,8 @@
       }
   }
 
-  .navigation__item--on-page {
+  .navigation__item--on-page a {
+    color: $basic-black;
     border-bottom: 2px solid $basic-green;
   }
 
