@@ -1,5 +1,6 @@
 .programs-item {
-  width: 227px;
+  width: 100%;
+  box-sizing: border-box;
   position: relative;
   background-color: $basic-light-grey;
   padding-top: 30px;
@@ -84,10 +85,9 @@
 
 @media (min-width: $tablet-width) {
   .programs-item {
-    width: 377px;
     position: relative;
     padding-top: 77px;
-    padding-right: 279px;
+    padding-right: 39%;
     padding-bottom: 57px;
     padding-left: 53px;
     margin-bottom: 30px;
@@ -96,7 +96,7 @@
         content: "";
         position: absolute;
         top: 92px;
-        left: 446px;
+        left: 63%;
         width: 200px;
         height: 200px;
         background-color: $basic-green;
@@ -107,7 +107,7 @@
       content: "";
       position: absolute;
       top: 81px;
-      left: 477px;
+      left: 67%;
       background-image: url("../img/icon-cat-slim.svg");
       width: 139px;
       height: 192px;
@@ -116,7 +116,7 @@
       content: "";
       position: absolute;
       top: 135px;
-      left: 413px;
+      left: 58%;
       background-image: url("../img/icon-cat-pro.svg");
       width: 268px;
       height: 112px;
@@ -148,7 +148,6 @@
 
 @media (min-width: $desktop-width) {
   .programs-item {
-    width: 467px;
     position: relative;
     padding-top: 77px;
     padding-right: 51px;

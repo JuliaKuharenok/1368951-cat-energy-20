@@ -1,7 +1,10 @@
 .advertising {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(../img/index-background-mobile@1x.jpg);
   background-position: 50% 0%;
-  width: 280px;
+  width: 100%;
   height: 305px;
   background-repeat: no-repeat;
   margin-bottom: 172px;
@@ -15,6 +18,7 @@
   margin: 0;
   margin-bottom: 25px;
   padding-top: 27px;
+  max-width: 249px;
 }
 
 .advertising__slogan {
@@ -23,11 +27,12 @@
   text-transform: uppercase;
   text-align: center;
   color: $basic-white;
+  margin: 0;
   margin-bottom: 313px;
     &::after {
       content: "";
       top: 41px;
-      left: 0px;
+      left: -45px;
       position: absolute;
       background-image: url(../img/index-can-mobile@1x.png);
       width: 280px;
@@ -37,11 +42,13 @@
 
 .advertising__get-program {
   width: 100%;
-  padding: 9px 73px;
+  padding: 9px 0;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .advertising {
+  display: block;
   padding-bottom: 308px;
   padding-left: 88px;
   padding-top: 59px;
@@ -57,6 +64,7 @@
   }
   .advertising__slogan {
     min-width: 283px;
+    text-align: left;
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
@@ -95,7 +103,7 @@
     top: -241px;
     left: 368px;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     background-image: url(../img/index-can-desktop@1x.png);
     width: 552px;
     height: 499px;

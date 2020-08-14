@@ -12,21 +12,21 @@
     <a class="page-header__logo">
       <img src="img/logo-mobile.svg" width="190px" height="38px" alt="Логотип Cat Energy">
     </a>
-    <nav class="page-header__navigation navigation">
+    <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item navigation__item--on-page">
           <a>Каталог продукции</a>
         </li>
         <li class="navigation__item">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
     </nav>
   </div>
 </header>
