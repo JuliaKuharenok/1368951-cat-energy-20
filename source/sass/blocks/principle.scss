@@ -33,6 +33,9 @@
       height: 60px;
       background-color: $basic-green;
     }
+    span {
+      display: none;
+    }
 }
 
 .principle__item--healthy::after {
@@ -113,6 +116,15 @@
         width: 80px;
         height: 80px;
         background-color: $basic-green;
+      }
+      span {
+        display: inline;
+        position: absolute;
+        z-index: -1;
+        top: -149px;
+        left: 114px;
+        @include font(oswald, 400, 280px, 280px);
+        color: #F2F2F2;
       }
     }
 

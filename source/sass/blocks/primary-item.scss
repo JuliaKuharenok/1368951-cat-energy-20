@@ -23,8 +23,8 @@
 
 .primary-item__img {
   position: absolute;
-  top: 43px;
-  left: 33px;
+  top: 9px;
+  left: -7px;
 }
 
 .primary-item__information {
@@ -72,6 +72,13 @@
     line-height: 23px;
     max-width: 174px;
   }
+
+  .primary-item__img {
+    position: absolute;
+    top: -55px;
+    left: 0;
+  }
+
   .primary-item__information {
     font-size: 16px;
     line-height: 16px;

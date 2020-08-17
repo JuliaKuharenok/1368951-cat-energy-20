@@ -127,7 +127,7 @@
   }
 
   .navigation__item--index a[href]:hover,
-  .navigation__item a[href]:focus {
+  .navigation__item--index a[href]:focus {
     color: $basic-white;
     opacity: 0.7;
   }
@@ -137,8 +137,8 @@
     opacity: 0.5;
   }
 
-  .navigation__item--on-page-index {
-    color: $basic-black;
+  .navigation__item--on-page-index a {
+    color: $basic-white;
     border-bottom: 2px solid $basic-white;
   }
 

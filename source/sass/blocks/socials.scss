@@ -11,6 +11,18 @@
   border-bottom: 1px solid #D9D9D9;
 }
 
+.socials a {
+  fill: $special-light-grey;
+    &:hover,
+    &:focus{
+      fill: $basic-green;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+}
+
+
 @media (min-width: $tablet-width) {
   .socials {
     padding: 0;
