@@ -1,9 +1,10 @@
 .principle {
-  padding-bottom: 46px;
+  margin-bottom: 46px;
 }
 
 .principle__title {
   margin: 0;
+  margin-bottom: 40px;
   @include font(oswald, 400, 36px, 40px);
 }
 
@@ -19,26 +20,29 @@
   color: $special-grey;
   max-width: 199px;
   margin-bottom: 26px;
-  padding-left: 100px;
+  padding-left: 80px;
     &--healthy::before,
     &--easy::before,
     &--portion::before,
     &--fast::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -2px;
       left: 0;
       width: 60px;
       height: 60px;
       background-color: $basic-green;
+    }
+    span {
+      display: none;
     }
 }
 
 .principle__item--healthy::after {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 6px;
+    top: 3px;
+    left: 5px;
     background-image: url(../img/advantage-leaf@1x.png);
     width: 50px;
     height: 50px;
@@ -47,8 +51,8 @@
 .principle__item--easy::after {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 6px;
+    top: 2px;
+    left: 5px;
     background-image: url(../img/advantage-powder@1x.png);
     width: 50px;
     height: 50px;
@@ -57,8 +61,8 @@
 .principle__item--portion::after {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 6px;
+    top: 3px;
+    left: 4px;
     background-image: url(../img/advantage-dining@1x.png);
     width: 50px;
     height: 50px;
@@ -67,8 +71,8 @@
 .principle__item--fast::after {
     content: "";
     position: absolute;
-    top: 4px;
-    left: 6px;
+    top: 3px;
+    left: 5px;
     background-image: url(../img/advantage-clock@1x.png);
     width: 50px;
     height: 50px;
@@ -76,22 +80,24 @@
 
 @media (min-width: $tablet-width) {
   .principle {
-    padding-bottom: 104px;
+    padding-bottom: 76px;
+    border-bottom: 1px solid #E6E6E6;
+    padding-top: 39px;
+    margin-bottom: 0;
   }
   .principle__title {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 186px;
+    margin-bottom: 183px;
   }
   .principle__list {
     list-style: none;
     padding-left: 0;
-    margin-left: 30px;
-    margin-right: 109px;
+    margin-left: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 182px;
-    row-gap: 245px;
+    column-gap: 8.5%;
+    row-gap: 220px;
   }
   .principle__item {
     position: relative;
@@ -110,6 +116,15 @@
         width: 80px;
         height: 80px;
         background-color: $basic-green;
+      }
+      span {
+        display: inline;
+        position: absolute;
+        z-index: -1;
+        top: -149px;
+        left: 114px;
+        @include font(oswald, 400, 280px, 280px);
+        color: #F2F2F2;
       }
     }
 
@@ -158,7 +173,10 @@
   .principle__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 98px;
+    column-gap: 6.6%;
+  }
+  .principle {
+    border-bottom: none;
   }
 }
 

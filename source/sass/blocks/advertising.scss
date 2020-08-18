@@ -1,10 +1,14 @@
 .advertising {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(../img/index-background-mobile@1x.jpg);
-  width: 320px;
+  background-position: 50% 0%;
+  width: 100%;
   height: 305px;
   background-repeat: no-repeat;
-  padding-bottom: 172px;
-  /* background-color: $basic-green; */
+  margin-bottom: 172px;
+  background-color: $basic-green;
 }
 
 .advertising__title {
@@ -12,6 +16,9 @@
   text-align: center;
   color: $basic-white;
   margin: 0;
+  margin-bottom: 25px;
+  padding-top: 27px;
+  max-width: 249px;
 }
 
 .advertising__slogan {
@@ -20,11 +27,12 @@
   text-transform: uppercase;
   text-align: center;
   color: $basic-white;
-  margin-bottom: 330px;
+  margin: 0;
+  margin-bottom: 313px;
     &::after {
       content: "";
-      top: 72px;
-      left: 12px;
+      top: 41px;
+      left: -45px;
       position: absolute;
       background-image: url(../img/index-can-mobile@1x.png);
       width: 280px;
@@ -34,29 +42,38 @@
 
 .advertising__get-program {
   width: 100%;
-  padding: 7px 73px;
+  padding: 9px 0;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .advertising {
-  padding-bottom: 526px;
+  display: block;
+  padding-bottom: 308px;
+  padding-left: 88px;
+  padding-top: 59px;
   background: none;
   }
   .advertising__title {
+    text-align: left;
     font-size: 60px;
     line-height: 60px;
     color: $basic-black;
     min-width: 414px;
+    padding-top: 0;
   }
   .advertising__slogan {
+    min-width: 283px;
+    text-align: left;
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
-    margin-bottom: 49px;
+    margin-top: 41px;
+    margin-bottom: 71px;
       &::after {
         content: "";
-        top: 9px;
-        left: 12px;
+        top: 39px;
+        left: -89px;
         position: absolute;
         z-index: -1;
         background-image: url(../img/index-can-tablet@1x.jpg);
@@ -64,18 +81,29 @@
         height: 609px;
     }
   }
+  .advertising__get-program {
+    padding: 12px 26px;
+    margin-left: -6px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .advertising {
-    padding-bottom: 267px;
+    padding-bottom: 50px;
+    padding-left: 81px;
+    padding-top: 97px;
   }
+  .advertising__slogan {
+    margin-top: 39px;
+    margin-bottom: 74px;
+  }
+
   .advertising__slogan::after {
     content: "";
-    top: -100px;
-    left: 300px;
+    top: -241px;
+    left: 368px;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     background-image: url(../img/index-can-desktop@1x.png);
     width: 552px;
     height: 499px;

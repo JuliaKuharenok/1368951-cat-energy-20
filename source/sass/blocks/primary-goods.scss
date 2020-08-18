@@ -1,14 +1,18 @@
 .primary-goods__list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet-width) {
   .primary-goods__list {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   column-gap: 60px;
-   row-gap: 140px;
+   justify-items: center;
+   column-gap: 8%;
+   row-gap: 143px;
+   margin-bottom: 66px;
   }
 }
 
@@ -16,7 +20,7 @@
   .primary-goods__list {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   column-gap: 80px;
-   row-gap: 143px;
+   column-gap: 6.3%;
+   row-gap: 132px;
   }
 }

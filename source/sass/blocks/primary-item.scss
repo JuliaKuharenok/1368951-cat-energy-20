@@ -5,9 +5,33 @@
   text-decoration: none;
 }
 
+.primary-item__title {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 140px;
+  max-width: 100px;
+}
+
+.primary-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.primary-item__img {
+  position: absolute;
+  top: 9px;
+  left: -7px;
+}
+
 .primary-item__information {
   @include font(arial, 400, 12px, 16px);
   color: $special-grey;
+  margin-left: 140px;
+  margin-bottom: 24px;
 }
 
 .primary-item__wrapper {
@@ -19,32 +43,70 @@
   display: flex;
 }
 
+.primary-item__order-button {
+  padding: 9px 0;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .primary-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: $basic-light-grey;
-    width: 324px;
-    height: 430px;
+    min-width: 324px;
+    box-sizing: border-box;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-left: 39px;
+    padding-top: 158px; /* temporary measure*/
+    border: none;
   }
+  .primary-item__title {
+    max-width: 159px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
   .primary-item__title a {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 23px;
     max-width: 174px;
   }
+
+  .primary-item__img {
+    position: absolute;
+    top: -55px;
+    left: 0;
+  }
+
   .primary-item__information {
     font-size: 16px;
     line-height: 16px;
+    width: 100%;
+    margin-bottom: 19px;
+    margin-left: 0;
+  }
+  .primary-item__information tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $basic-dark-grey;
+    padding-bottom: 4px;
+  }
+  .primary-item__order-button {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 11px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .primary-item {
-    width: 245px;
-    height: 431px;
+    min-width: 245px;
   }
+
   .primary-item__title a {
     font-size: 20px;
     line-height: 21px;

@@ -4,9 +4,15 @@
   margin: 0;
 }
 
+.programs {
+  margin-top: 197px;
+  margin-bottom: 27px;
+}
+
 @media (min-width: $desktop-width) {
   .programs__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 6.3%;
   }
 }

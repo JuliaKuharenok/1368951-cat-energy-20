@@ -9,10 +9,17 @@
 <body class="page__body">
 <header class="page-header">
   <div class="page-header__wrapper">
-  <a class="page-header__logo">
-    <img src="img/logo-mobile.svg" width="190px" height="38px" alt="Логотип Cat Energy">
+  <a href="index.html" class="page-header__logo">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+      <img src="img/logo-mobile.svg" width="190px" height="38px" alt="Логотип Cat Energy">
+    </picture>
   </a>
-  <nav class="page-header__navigation navigation">
+  <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
+    <button class="navigation__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <ul class="navigation__list">
       <li class="navigation__item">
         <a href="index.html">Главная</a>
@@ -20,19 +27,16 @@
       <li class="navigation__item">
         <a href="catalog.html">Каталог продукции</a>
       </li>
-      <li class="navigation__item">
+      <li class="navigation__item navigation__item--on-page">
         <a>Подбор программы</a>
       </li>
     </ul>
-    <button class="navigation__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
   </nav>
   </div>
 </header>
 <main class="page-main">
   <div class="page-main__wrapper">
-  <h1 class="page-main__title">Подбор программы</h1>
+  <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
   <p class="page-main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
   <section class="page-main__form form">
     <h2 class="visually-hidden">Основные данные</h2>
@@ -42,30 +46,30 @@
         <ul class="questions__list">
           <li class="questions__item">
             <label for="name">Имя:*</label>
-            <input type="text" id="name" placeholder="Барсик">
+            <input type="text" name="name" id="name" placeholder="Барсик">
           </li>
           <li class="questions__item">
             <label for="weight">Вес (кг):*</label>
-            <input type="text" id="weight" placeholder="7">
+            <input type="text" name="weight" id="weight" placeholder="7">
           </li>
           <li class="questions__item">
             <label for="age">Возраст (лет):</label>
-            <input type="text" id="age" placeholder="7">
+            <input type="text" name="age" id="age" placeholder="7">
           </li>
         </ul>
       </fieldset>
       <fieldset class="questions__choose-program">
         <ul class="questions__list">
           <li class="questions__item">
-            <input type="radio" id="weight-loss" checked>
+            <input type="radio" name="program" value="weight-loss" id="weight-loss" class="visually-hidden questions__input-radio" checked>
             <label for="weight-loss">Похудение</label>
           </li>
           <li class="questions__item">
-            <input type="radio" id="weight-gain">
-            <label for="weight-gain">Набор веса</label>
+            <input type="radio" name="program" value="weight-gain" id="weight-gain" class="visually-hidden questions__input-radio">
+            <label for="weight-gain">Набор массы</label>
           </li>
           <li class="questions__item">
-            <input type="radio" id="consultation">
+            <input type="radio" name="program" value="consultation" id="consultation" class="visually-hidden questions__input-radio">
             <label for="consultation">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
@@ -74,38 +78,38 @@
       <fieldset class="questions__personal-info">
         <legend class="questions__title">Контактные данные (владельца кота)</legend>
         <ul class="questions__list">
-          <li class="questions__item">
+          <li class="questions__item item">
             <label for="email">E-mail:*</label>
-            <input type="email" id="email" placeholder="kuklachev@gmail.com">
+            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" class="item__input--email">
           </li>
-          <li class="questions__item">
+          <li class="questions__item item">
             <label for="tel">Телефон:*</label>
-            <input type="tel" id="tel" placeholder="8 (960) 900-60-90">
+            <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" class="item__input--phone">
           </li>
         </ul>
       </fieldset>
       <fieldset class="questions__comment">
         <legend class="questions__title">Комментарий</legend>
-        <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea id="comment" name="character" placeholder="Расскажите обо всех повадках кота"></textarea>
         <label for="comment"></label>
       </fieldset>
       <fieldset class="questions__addition">
         <legend class="questions__title">Дополнительно</legend>
         <ul class="questions__list">
           <li class="questions__item">
-            <input type="checkbox" id="sweetener" checked>
+            <input type="checkbox" name="sweetener" id="sweetener" class="visually-hidden questions__input-checkbox" checked>
             <label for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="questions__item">
-            <input type="checkbox" id="water">
+            <input type="checkbox" name="water" id="water" class="visually-hidden questions__input-checkbox">
             <label for="water">Питьевая вода</label>
           </li>
           <li class="questions__item">
-            <input type="checkbox" id="milk">
+            <input type="checkbox" name="milk" id="milk" class="visually-hidden questions__input-checkbox">
             <label for="milk">Молоко</label>
           </li>
           <li class="questions__item">
-            <input type="checkbox" id="vitamins">
+            <input type="checkbox" name="vitamins" id="vitamins" class="visually-hidden questions__input-checkbox">
             <label for="vitamins">Витамины</label>
           </li>
         </ul>
@@ -123,7 +127,7 @@
     <h2 class="visually-hidden">Как нас найти</h2>
     <div class="address__our-address">
       <div class="address__wrapper">
-      <p class="address__vacancy">Приглашаем к сотрудничеству диллеров!</p>
+      <p class="address__vacancy">Приглашаем к&nbsp;сотрудничеству диллеров!</p>
       <p>ул. Большая Конюшенная, д. 19/8<br>
         Санкт-Петербург</p>
       </div>
@@ -147,5 +151,6 @@
     </div>
   </section>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

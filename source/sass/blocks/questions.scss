@@ -1,17 +1,16 @@
-.questions fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
 .questions__list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
+.questions__item {
+  display: flex;
+}
+
 .questions__title {
   @include font(oswald, 400, 24px, 26px);
+  padding: 0;
 }
 
 .questions label {
@@ -21,15 +20,20 @@
 }
 
 .questions input {
+  @include font(oswald, 400, 16px, 18px);
+  text-transform: uppercase;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 15px;
-  padding-right: 51px;
+  padding-right: 11px;
   border: 1px solid $special-input-grey;
 }
 
 .questions textarea {
-  min-width: 280px;
+  @include font(oswald, 400, 16px, 18px);
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
   min-height: 150px;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -37,47 +41,6 @@
   padding-right: 12px;
   border: 1px solid $special-input-grey;
   resize: none;
-}
-
-@media (min-width: $tablet-width) {
-  .questions__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-  .questions label {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .questions input {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 150px;
-  }
-  .questions textarea {
-    min-width: 631px;
-    min-height: 174px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 19px;
-    padding-right: 19px;
-  }
-  .questions__addition .questions__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .questions__addition .questions__list,
-  .questions__personal-info .questions__list {
-    display: flex;
-  }
-  .questions__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-  }
 }
 
 .questions input::placeholder,
@@ -90,6 +53,320 @@
   color: $special-grey;
 }
 
+.questions__cat-info {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 39px;
+  padding-bottom: 9px;
+}
+
+.questions__cat-info input {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.questions__cat-info label {
+  margin-right: 13px;
+  margin-top: 12px;
+}
+
+.questions__choose-program {
+  border: 1px solid $special-border-grey;
+  border-left: none;
+  border-right: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 26px;
+}
+
+.questions__choose-program label {
+  margin-left: 46px;
+  margin-bottom: 25px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.questions__input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: -9px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-dark-grey;
+  border-radius: 50%;
+}
+
+.questions__input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -37px;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
+}
+
+.questions__personal-info {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9px;
+    .questions__title {
+       padding-top: 26px;
+       margin-bottom: 32px;
+    }
+}
+
+.questions__personal-info input {
+  flex: 1;
+  margin-bottom: 18px;
+}
+
+.questions__personal-info label {
+  margin-right: 13px;
+  margin-top: 12px;
+}
+
+.questions__comment {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+    .questions__title {
+      margin-bottom: 34px;
+    }
+}
+
+.questions__addition {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 19px;
+    .questions__title {
+      margin-bottom: 39px;
+    }
+}
+
+.questions__addition label {
+  margin-left: 46px;
+  margin-bottom: 24px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.questions__input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: -6px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-dark-grey;
+}
+
+.questions__input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -39px;
+  width: 18px;
+  height: 14px;
+  background-image: url(../img/icon-tick.svg);
+}
+
+.questions__input-radio:hover + label::before,
+.questions__input-checkbox:hover + label::before {
+  border: 1px solid #BABABA;
+}
+
+.questions__input-radio:focus + label::before,
+.questions__input-checkbox:focus + label::before {
+  outline: 2px solid blue;
+  border: 1px solid #BABABA;
+}
+
+.questions__input-radio:disabled + label::before,
+.questions__input-radio:checked:disabled + label::after,
+.questions__input-checkbox:disabled + label::before,
+.questions__input-checkbox:checked:disabled + label::after{
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+@media (min-width: $tablet-width) {
+  .questions__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .questions label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .questions input {
+    @include font(oswald, 400, 20px, 30px);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 11px;
+  }
+  .questions textarea {
+    @include font(oswald, 400, 20px, 30px);
+    min-height: 174px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 12px;
+  }
+
+  .questions input::placeholder,
+  .questions textarea::placeholder {
+    @include font(oswald, 400, 20px, 30px);
+  }
+
+  .questions__addition .questions__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 57px;
+    row-gap: 43px;
+  }
+
+  .questions__cat-info {
+    padding-top: 64px;
+    padding-bottom: 52px;
+  }
+
+  .questions__cat-info input {
+    margin-bottom: 20px;
+  }
+
+  .questions__cat-info label {
+    margin-right: 19px;
+  }
+
+  .questions__choose-program {
+    border: 1px solid $special-border-grey;
+    padding-top: 29px;
+    padding-left: 28px;
+    padding-bottom: 6px;
+  }
+
+  .questions__choose-program label {
+    margin-left: 60px;
+    margin-bottom: 23px;
+  }
+
+  .questions__input-radio + label::before {
+    width: 40px;
+    height: 40px;
+    left: -61px;
+    top: -6px;
+  }
+
+  .questions__input-radio:checked + label::after {
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: -48px;
+  }
+
+  .questions__personal-info {
+    padding-bottom: 49px;
+      .questions__title {
+        padding-top: 75px;
+        margin-bottom: 76px;
+      }
+  }
+
+  .questions__comment {
+    padding-bottom: 61px;
+      .questions__title {
+        margin-bottom: 76px;
+      }
+  }
+
+  .questions__addition {
+    padding-bottom: 59px;
+      .questions__title {
+        margin-bottom: 61px;
+      }
+  }
+
+  .questions__addition label {
+     margin-left: 59px;
+     margin-bottom: 0px;
+  }
+
+  .questions__input-checkbox + label::before {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: -6px;
+  }
+
+  .questions__input-checkbox:checked + label::after {
+    top: 9px;
+    left: -48px;
+  }
+
+
+  .form__submit-button {
+    font-size: 20px;
+    line-height: 16px;
+    padding: 18px 64px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .questions__addition .questions__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .questions__personal-info .questions__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
+
+  .questions__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+  .questions__choose-program {
+    margin-top: 66px;
+    margin-bottom: 70px;
+  }
+  .questions__personal-info {
+    padding-bottom: 49px;
+      .questions__title {
+        padding-top: 0;
+        margin-bottom: 74px;
+      }
+  }
+
+  .questions__addition {
+    padding-bottom: 65px;
+      .questions__title {
+        margin-bottom: 65px;
+      }
+  }
+
+  .form__submit-button {
+    font-size: 20px;
+    line-height: 16px;
+    padding: 18px 207px;
+  }
+}
+
 .questions input:hover,
 .questions textarea:hover {
   border: 1px solid $basic-dark-grey;
@@ -100,7 +377,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 14px;
-  padding-right: 50px;
+  padding-right: 10px;
   border: 2px solid $special-grey;
 }
 

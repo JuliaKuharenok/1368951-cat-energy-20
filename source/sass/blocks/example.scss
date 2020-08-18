@@ -1,13 +1,19 @@
 .example {
   background-color: $special-background-grey;
+  padding-top: 27px;
+  padding-bottom: 36px;
 }
 
 .example__title {
   @include font(oswald, 400, 36px, 40px);
+  margin: 0;
+  margin-bottom: 33px;
 }
 
 .example__description {
   @include font(arial, 400, 14px, 18px);
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .example__wrapper {
@@ -19,35 +25,61 @@
   border: 1px solid #CDCDCD;
   border-radius: 3px;
   border-bottom: none;
-  width: 124px;
+  text-align: center;
+  width: 122px;
+  margin: 0;
 }
 
 .example__results dt {
   @include font(oswald, 400, 24px, 24px);
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 8px;
 }
 
 .example__results dd {
   @include font(arial, 400, 12px, 12px);
   color: $special-grey;
+  margin: 0;
+  margin-left: 20px;
+  max-width: 80px;
 }
 
 .example__expenses {
   @include font(oswald, 400, 14px, 20px);
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 42px;
+}
+
+.example__toggles {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 44px;
+  margin-right: 39px;
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    background-color: $basic-white;
+    padding-top: 43px;
+  }
   .example__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 64px;
   }
   .example__description {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 53px;
   }
   .example__results {
-    width: 162px;
+    width: 161px;
+    margin-right: 41px;
   }
   .example__results dt {
     font-size: 30px;
@@ -56,6 +88,9 @@
   .example__results dd {
     font-size: 14px;
     line-height: 14px;
+    max-width: 142px;
+    margin-left: 9px;
+    margin-top: 4px;
   }
   .example__container {
     display: flex;
@@ -63,7 +98,10 @@
   }
   .example__expenses {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 25px;
+    max-width: 174px;
+    text-align: right;
+    margin-top: 11px;
   }
 }
 
@@ -72,11 +110,31 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 134px;
+      padding-top: 23px;
   }
   .example__container {
       display: flex;
       flex-direction: column;
     }
+  .example__title {
+    margin-bottom: 147px;
+  }
+  .example__description {
+    max-width: 436px;
+    margin-bottom: 68px;
+  }
+  .example__wrapper {
+    justify-content: start;
+  }
+  .example__expenses {
+    max-width: max-content;
+    text-align: left;
+    margin-top: 52px;
+    margin-bottom: 37px;
+      & span {
+        margin-left: 59px;
+      }
+  }
 }
 
 

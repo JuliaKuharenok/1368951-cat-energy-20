@@ -1,6 +1,65 @@
-.slider__toggle {
+.slider__button {
   border: none;
   background-color: transparent;
   @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
+  padding: 0;
 }
+
+.slider__bar {
+  position: relative;
+  width: 83px;
+  height: 12px;
+  background: $basic-white;
+  border: 1px solid $basic-dark-grey;
+  border-radius: 6px;
+}
+
+.slider__toggle--big {
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 35px;
+  height: 6px;
+  background: $basic-green;
+  border-radius: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__bar {
+    width: 428px;
+    height: 8px;
+    background: #DCDCDC;
+    border: none;
+  }
+
+  .slider__toggle {
+    /*position: absolute;*/
+    border-radius: 50%;
+      &--big {
+        width: 34px;
+        height: 34px;
+        background: $basic-white;
+        border: 1px solid $basic-dark-grey;
+    }
+      &--small {
+        width: 8px;
+        height: 8px;
+        background: $basic-green;
+        z-index: 3;
+      }
+  }
+
+}
+
+.slider__item {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
