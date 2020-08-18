@@ -20,6 +20,8 @@
 }
 
 .questions input {
+  @include font(oswald, 400, 16px, 18px);
+  text-transform: uppercase;
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 15px;
@@ -28,6 +30,8 @@
 }
 
 .questions textarea {
+  @include font(oswald, 400, 16px, 18px);
+  text-transform: uppercase;
   width: 100%;
   box-sizing: border-box;
   min-height: 150px;
@@ -37,6 +41,16 @@
   padding-right: 12px;
   border: 1px solid $special-input-grey;
   resize: none;
+}
+
+.questions input::placeholder,
+.questions textarea::placeholder {
+  font-family: oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-grey;
 }
 
 .questions__cat-info {
@@ -67,8 +81,34 @@
 }
 
 .questions__choose-program label {
-  margin-left: 25px;
+  margin-left: 46px;
   margin-bottom: 25px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.questions__input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: -9px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-dark-grey;
+  border-radius: 50%;
+}
+
+.questions__input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -37px;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
 }
 
 .questions__personal-info {
@@ -113,8 +153,51 @@
 }
 
 .questions__addition label {
-  margin-left: 26px;
+  margin-left: 46px;
   margin-bottom: 24px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.questions__input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: -6px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $basic-dark-grey;
+}
+
+.questions__input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -39px;
+  width: 18px;
+  height: 14px;
+  background-image: url(../img/icon-tick.svg);
+}
+
+.questions__input-radio:hover + label::before,
+.questions__input-checkbox:hover + label::before {
+  border: 1px solid #BABABA;
+}
+
+.questions__input-radio:focus + label::before,
+.questions__input-checkbox:focus + label::before {
+  outline: 2px solid blue;
+  border: 1px solid #BABABA;
+}
+
+.questions__input-radio:disabled + label::before,
+.questions__input-radio:checked:disabled + label::after,
+.questions__input-checkbox:disabled + label::before,
+.questions__input-checkbox:checked:disabled + label::after{
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -127,20 +210,26 @@
     line-height: 30px;
   }
   .questions input {
-    font-size: 20px;
-    line-height: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    @include font(oswald, 400, 20px, 30px);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 11px;
   }
   .questions textarea {
+    @include font(oswald, 400, 20px, 30px);
     min-height: 174px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 12px;
   }
+
+  .questions input::placeholder,
+  .questions textarea::placeholder {
+    @include font(oswald, 400, 20px, 30px);
+  }
+
   .questions__addition .questions__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -169,8 +258,22 @@
   }
 
   .questions__choose-program label {
-    margin-left: 39px;
+    margin-left: 60px;
     margin-bottom: 23px;
+  }
+
+  .questions__input-radio + label::before {
+    width: 40px;
+    height: 40px;
+    left: -61px;
+    top: -6px;
+  }
+
+  .questions__input-radio:checked + label::after {
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    left: -48px;
   }
 
   .questions__personal-info {
@@ -196,9 +299,22 @@
   }
 
   .questions__addition label {
-     margin-left: 39px;
+     margin-left: 59px;
      margin-bottom: 0px;
-   }
+  }
+
+  .questions__input-checkbox + label::before {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    top: -6px;
+  }
+
+  .questions__input-checkbox:checked + label::after {
+    top: 9px;
+    left: -48px;
+  }
+
 
   .form__submit-button {
     font-size: 20px;
@@ -251,16 +367,6 @@
   }
 }
 
-.questions input::placeholder,
-.questions textarea::placeholder {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special-grey;
-}
-
 .questions input:hover,
 .questions textarea:hover {
   border: 1px solid $basic-dark-grey;
@@ -271,7 +377,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 14px;
-  padding-right: 50px;
+  padding-right: 10px;
   border: 2px solid $special-grey;
 }
 

@@ -46,30 +46,30 @@
         <ul class="questions__list">
           <li class="questions__item">
             <label for="name">Имя:*</label>
-            <input type="text" id="name" placeholder="Барсик">
+            <input type="text" name="name" id="name" placeholder="Барсик">
           </li>
           <li class="questions__item">
             <label for="weight">Вес (кг):*</label>
-            <input type="text" id="weight" placeholder="7">
+            <input type="text" name="weight" id="weight" placeholder="7">
           </li>
           <li class="questions__item">
             <label for="age">Возраст (лет):</label>
-            <input type="text" id="age" placeholder="7">
+            <input type="text" name="age" id="age" placeholder="7">
           </li>
         </ul>
       </fieldset>
       <fieldset class="questions__choose-program">
         <ul class="questions__list">
           <li class="questions__item">
-            <input type="radio" id="weight-loss" checked>
+            <input type="radio" name="program" value="weight-loss" id="weight-loss" class="visually-hidden questions__input-radio" checked>
             <label for="weight-loss">Похудение</label>
           </li>
           <li class="questions__item">
-            <input type="radio" id="weight-gain">
+            <input type="radio" name="program" value="weight-gain" id="weight-gain" class="visually-hidden questions__input-radio">
             <label for="weight-gain">Набор массы</label>
           </li>
           <li class="questions__item">
-            <input type="radio" id="consultation">
+            <input type="radio" name="program" value="consultation" id="consultation" class="visually-hidden questions__input-radio">
             <label for="consultation">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
@@ -80,36 +80,36 @@
         <ul class="questions__list">
           <li class="questions__item item">
             <label for="email">E-mail:*</label>
-            <input type="email" id="email" placeholder="kuklachev@gmail.com" class="item__input--email">
+            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" class="item__input--email">
           </li>
           <li class="questions__item item">
             <label for="tel">Телефон:*</label>
-            <input type="tel" id="tel" placeholder="8 (960) 900-60-90" class="item__input--phone">
+            <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" class="item__input--phone">
           </li>
         </ul>
       </fieldset>
       <fieldset class="questions__comment">
         <legend class="questions__title">Комментарий</legend>
-        <textarea id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea id="comment" name="character" placeholder="Расскажите обо всех повадках кота"></textarea>
         <label for="comment"></label>
       </fieldset>
       <fieldset class="questions__addition">
         <legend class="questions__title">Дополнительно</legend>
         <ul class="questions__list">
           <li class="questions__item">
-            <input type="checkbox" id="sweetener" checked>
+            <input type="checkbox" name="sweetener" id="sweetener" class="visually-hidden questions__input-checkbox" checked>
             <label for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="questions__item">
-            <input type="checkbox" id="water">
+            <input type="checkbox" name="water" id="water" class="visually-hidden questions__input-checkbox">
             <label for="water">Питьевая вода</label>
           </li>
           <li class="questions__item">
-            <input type="checkbox" id="milk">
+            <input type="checkbox" name="milk" id="milk" class="visually-hidden questions__input-checkbox">
             <label for="milk">Молоко</label>
           </li>
           <li class="questions__item">
-            <input type="checkbox" id="vitamins">
+            <input type="checkbox" name="vitamins" id="vitamins" class="visually-hidden questions__input-checkbox">
             <label for="vitamins">Витамины</label>
           </li>
         </ul>
