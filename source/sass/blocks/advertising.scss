@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   margin-bottom: 172px;
   background-color: $basic-green;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/index-background-mobile@2x.jpg);
+      background-size: 320px auto;
+    }
 }
 
 .advertising__title {
@@ -28,21 +32,26 @@
   text-align: center;
   color: $basic-white;
   margin: 0;
-  margin-bottom: 313px;
+  margin-bottom: 303px;
     &::after {
       content: "";
       top: 41px;
-      left: -45px;
+      left: -42px;
       position: absolute;
       background-image: url(../img/index-can-mobile@1x.png);
       width: 280px;
       height: 270px;
+        @media (min-resolution: 2dppx) {
+          background-image: url(../img/index-can-mobile@2x.png);
+          background-size: 282px auto;
+          background-repeat: no-repeat;
+        }
     }
 }
 
 .advertising__get-program {
   width: 100%;
-  padding: 9px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -51,9 +60,10 @@
   display: block;
   padding-bottom: 308px;
   padding-left: 88px;
-  padding-top: 59px;
+  padding-top: 69px;
   background: none;
   }
+
   .advertising__title {
     text-align: left;
     font-size: 60px;
@@ -62,6 +72,7 @@
     min-width: 414px;
     padding-top: 0;
   }
+
   .advertising__slogan {
     min-width: 283px;
     text-align: left;
@@ -69,18 +80,22 @@
     line-height: 20px;
     color: $basic-black;
     margin-top: 41px;
-    margin-bottom: 71px;
+    margin-bottom: 61px;
       &::after {
-        content: "";
         top: 39px;
         left: -89px;
-        position: absolute;
         z-index: -1;
         background-image: url(../img/index-can-tablet@1x.jpg);
         width: 709px;
         height: 609px;
+          @media (min-resolution: 2dppx) {
+            background-image: url(../img/index-can-tablet@2x.jpg);
+            background-size: 709px auto;
+            background-repeat: no-repeat;
+          }
     }
   }
+
   .advertising__get-program {
     padding: 12px 26px;
     margin-left: -6px;
@@ -91,22 +106,29 @@
   .advertising {
     padding-bottom: 50px;
     padding-left: 81px;
-    padding-top: 97px;
-  }
-  .advertising__slogan {
-    margin-top: 39px;
-    margin-bottom: 74px;
+    padding-top: 111px;
   }
 
-  .advertising__slogan::after {
-    content: "";
-    top: -241px;
-    left: 368px;
-    position: absolute;
-    z-index: 1;
-    background-image: url(../img/index-can-desktop@1x.png);
-    width: 552px;
-    height: 499px;
+  .advertising__slogan {
+    margin-top: 39px;
+    margin-bottom: 63px;
+      &::after {
+        top: -241px;
+        left: 368px;
+        z-index: 1;
+        background-image: url(../img/index-can-desktop@1x.png);
+        width: 552px;
+        height: 499px;
+          @media (min-resolution: 2dppx) {
+            background-image: url(../img/index-can-desktop@2x.png);
+            background-size: 549px auto;
+            background-repeat: no-repeat;
+          }
+      }
+  }
+
+  .advertising__get-program {
+    margin-left: 0;
   }
 }
 
