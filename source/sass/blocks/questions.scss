@@ -58,7 +58,6 @@
   padding: 0;
   margin: 0;
   padding-top: 39px;
-  padding-bottom: 9px;
 }
 
 .questions__cat-info input {
@@ -115,7 +114,6 @@
   border: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 9px;
     .questions__title {
        padding-top: 26px;
        margin-bottom: 32px;
@@ -239,11 +237,11 @@
 
   .questions__cat-info {
     padding-top: 64px;
-    padding-bottom: 52px;
+    padding-bottom: 54px;
   }
 
   .questions__cat-info input {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 
   .questions__cat-info label {
@@ -284,10 +282,14 @@
       }
   }
 
+  .questions__personal-info input {
+    margin-bottom: 12px;
+  }
+
   .questions__comment {
     padding-bottom: 61px;
       .questions__title {
-        margin-bottom: 76px;
+        margin-bottom: 75px;
       }
   }
 

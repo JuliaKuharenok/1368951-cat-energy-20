@@ -1,7 +1,8 @@
 .page-main__title {
   @include font(oswald, 400, 36px, 36px);
   margin: 0;
-  margin-bottom: 38px;
+  margin-top: 26px;
+  margin-bottom: 39px;
 }
 
 .page-main__description {
@@ -26,23 +27,25 @@
   .page-main__wrapper {
     width: 92.2%;
   }
+
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 60px;
+    margin-top: 69px;
     margin-bottom: 164px;
       &--form {
         margin-bottom: 56px;
       }
   }
+
   .page-main__description {
     font-size: 20px;
     line-height: 30px;
     max-width: 323px;
     margin-left: 40px;
   }
+
   .page-main__legend-container {
-    display: flex;
     flex-direction: row;
   }
 }
@@ -51,10 +54,16 @@
   .page-main__wrapper {
      width: 84.7%;
   }
+
   .page-main__container {
     display: flex;
     justify-content: space-between;
   }
+
+  .page-main__title {
+    margin-top: 74px;
+  }
+
   .page-main__description {
     margin-left: 0;
   }

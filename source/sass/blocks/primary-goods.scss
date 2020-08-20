@@ -11,16 +11,16 @@
    grid-template-columns: 1fr 1fr;
    justify-items: center;
    column-gap: 8%;
-   row-gap: 143px;
+   row-gap: 140px;
    margin-bottom: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .primary-goods__list {
-   display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    column-gap: 6.3%;
-   row-gap: 132px;
+   row-gap: 142px;
+   margin-bottom: 75px;
   }
 }

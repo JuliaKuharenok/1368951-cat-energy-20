@@ -68,7 +68,7 @@
     display: grid;
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 50px auto;
+    margin: 55px auto;
   }
 
   .page-footer__logo {
@@ -90,6 +90,6 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
       width: 84.7%;
-      margin: 55px auto;
+      margin: 61px auto;
     }
 }

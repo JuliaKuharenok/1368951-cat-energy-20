@@ -1,14 +1,16 @@
-/*.item__input {
+.item__input {
     &--email {
       background-image: url(../img/icon-mail.svg);
+      background-position: 100%;
+      background-repeat: no-repeat;
       width: 18px;
       height: 13px;
     }
     &--phone {
       background-image: url(../img/icon-phone.svg);
+      background-position: 100%;
+      background-repeat: no-repeat;
       width: 20px;
-      height: 17px;
+      height: 20px;
     }
- background-position: end;
- background-repeat: no-repeat;
-}*/
+}
