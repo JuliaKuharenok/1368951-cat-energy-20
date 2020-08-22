@@ -1,7 +1,17 @@
 .additional-goods__title {
+  position: relative;
   @include font(oswald, 400, 24px, 24px);
   margin: 0;
   margin-bottom: 35px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      right: -20px;
+      width: 53px;
+      height: 2px;
+      background-color: $basic-green;
+    }
 }
 
 .additional-goods__list {
@@ -9,6 +19,9 @@
   padding-left: 0;
   margin: 0;
   margin-bottom: 38px;
+    &:last-child {
+      border-bottom: 1px solid $basic-dark-grey;
+    }
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +30,22 @@
     line-height: 36px;
     margin-left: 37px;
     margin-bottom: 80px;
+      &::after,
+      &::before {
+        top: 22px;
+      }
+      &::after {
+        right: -30px;
+        width: 326px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: -67px;
+        height: 2px;
+        width: 30px;
+        background-color: $basic-green;
+      }
   }
   .additional-goods {
     margin-bottom: 66px;
@@ -24,8 +53,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional-goods {
+    margin-bottom: 55px;
+  }
+
   .additional-goods__title {
     margin-left: 0;
+      &::after {
+        right: -400px;
+        width: 957px;
+      }
+      &::before {
+        left: -110px;
+        width: 70px;
+    }
   }
 }
 

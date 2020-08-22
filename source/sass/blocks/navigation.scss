@@ -109,6 +109,10 @@
       }
   }
 
+  .navigation__item a {
+    padding-bottom: 7px;
+  }
+
   .navigation__item--on-page a {
     color: $basic-black;
     border-bottom: 2px solid $basic-green;
@@ -121,7 +125,7 @@
     color: $basic-white;
   }
   .navigation__list {
-    margin-top: 73px;
+    margin-top: 69px;
     font-size: 20px;
     line-height: 30px;
   }

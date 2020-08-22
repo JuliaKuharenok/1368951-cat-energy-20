@@ -4,6 +4,11 @@
   background-size: cover;
   width: 100%;
   height: 476px;
+   @media (min-resolution: 2dppx) {
+     background-image: url(../img/bg-map-mobile@2x.png);
+     background-size: 476px auto;
+     background-size: cover;
+   }
 }
 
 .address__vacancy {
@@ -19,7 +24,8 @@
   background-color: $basic-light-grey;
 }
 
-.address__our-address p {
+.address__our-address p,
+.address__our-address span {
   margin: 0;
   max-width: 140px;
 }
@@ -39,9 +45,14 @@
   .address {
     background-image: url(../img/bg-map-tablet@1x.png);
     height: 603px;
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-map-tablet@2x.png);
+        background-size: 603px auto;
+        background-size: cover;
+      }
   }
   .address__wrapper {
-    width: 88.4%;
+    width: 81.4%;
     margin: 0 auto;
     justify-content: space-between;
     padding: 0;
@@ -53,19 +64,39 @@
     line-height: 22px;
   }
 
-  .address__our-address p {
+  .address__our-address p,
+  .address__our-address span {
     max-width: 171px;
+  }
+
+  .address__our-address span {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .address {
-    position: relative;
     background-image: url(../img/bg-map-desktop@1x.png);
     height: 400px;
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/bg-map-desktop@2x.png);
+        background-size: 400px auto;
+        background-size: cover;
+      }
   }
+
   .address__vacancy {
     max-width: 163px;
+  }
+
+  .address__our-address {
+      position: relative;
+      width: 1220px;
+      height: 400px;
+      margin: 0 auto;
+      background-color: transparent;
   }
 
   .address__wrapper {
@@ -77,5 +108,10 @@
     padding-left: 77px;
     padding-right: 73px;
   }
+
+  .address__our-address span {
+    text-align: left;
+  }
+
 }
 

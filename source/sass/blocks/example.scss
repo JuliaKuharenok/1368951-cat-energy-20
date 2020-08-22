@@ -22,7 +22,7 @@
 }
 
 .example__results {
-  border: 1px solid #CDCDCD;
+  border: 1px solid $basic-dark-grey;
   border-radius: 3px;
   border-bottom: none;
   text-align: center;
@@ -55,7 +55,7 @@
 }
 
 .example__toggles {
-  margin-top: 50px;
+  margin-top: 53px;
   display: flex;
   justify-content: space-between;
   margin-left: 44px;
@@ -66,25 +66,31 @@
   .example {
     background-color: $basic-white;
     padding-top: 43px;
+    padding-bottom: 66px;
   }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 64px;
   }
+
   .example__description {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 53px;
   }
+
   .example__results {
     width: 161px;
     margin-right: 41px;
   }
+
   .example__results dt {
     font-size: 30px;
     line-height: 37px;
   }
+
   .example__results dd {
     font-size: 14px;
     line-height: 14px;
@@ -92,10 +98,12 @@
     margin-left: 9px;
     margin-top: 4px;
   }
+
   .example__container {
     display: flex;
     justify-content: space-between;
   }
+
   .example__expenses {
     font-size: 20px;
     line-height: 25px;
@@ -103,29 +111,40 @@
     text-align: right;
     margin-top: 11px;
   }
+
+  .example__toggles {
+    margin-top: 68px;
+    margin-right: 69px;
+    margin-left: 68px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 134px;
-      padding-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-bottom: 36px;
   }
+
   .example__container {
-      display: flex;
-      flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
+  }
+
   .example__title {
     margin-bottom: 147px;
   }
+
   .example__description {
     max-width: 436px;
     margin-bottom: 68px;
   }
+
   .example__wrapper {
     justify-content: start;
   }
+
   .example__expenses {
     max-width: max-content;
     text-align: left;
@@ -134,6 +153,11 @@
       & span {
         margin-left: 59px;
       }
+  }
+  .example__toggles {
+    margin-top: -20px;
+    margin-right: 0;
+    margin-left: 120px;
   }
 }
 

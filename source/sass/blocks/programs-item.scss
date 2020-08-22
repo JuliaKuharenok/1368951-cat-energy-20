@@ -85,7 +85,6 @@
 
 @media (min-width: $tablet-width) {
   .programs-item {
-    position: relative;
     padding-top: 77px;
     padding-right: 39%;
     padding-bottom: 57px;
@@ -93,34 +92,27 @@
     margin-bottom: 30px;
       &--lose-weight::before,
       &--gain-weight::before {
-        content: "";
-        position: absolute;
         top: 92px;
         left: 63%;
         width: 200px;
         height: 200px;
-        background-color: $basic-green;
-        border-radius: 50%;
       }
     }
+
     .programs-item--lose-weight::after {
-      content: "";
-      position: absolute;
       top: 81px;
       left: 67%;
-      background-image: url("../img/icon-cat-slim.svg");
       width: 139px;
       height: 192px;
     }
+
     .programs-item--gain-weight::after {
-      content: "";
-      position: absolute;
       top: 135px;
       left: 58%;
-      background-image: url("../img/icon-cat-pro.svg");
       width: 268px;
       height: 112px;
     }
+
     .programs-item__title {
       font-size: 36px;
       line-height: 36px;
@@ -138,10 +130,10 @@
       font-size: 20px;
       line-height: 30px;
         &::after {
-          content: "";
-          position: absolute;
           top: 11px;
-          left: 119px;
+          left: 134px;
+          background-image: url("../img/icon-right-arrow-verylong.svg");
+          width: 24px;
         }
     }
 }
@@ -156,31 +148,22 @@
     margin-bottom: 6px;
       &--lose-weight::before,
       &--gain-weight::before {
-        content: "";
-        position: absolute;
         top: 47px;
         left: 52px;
         width: 100px;
         height: 100px;
         background-color: $basic-green;
-        border-radius: 50%;
       }
     }
     .programs-item--lose-weight::after {
-      content: "";
-      position: absolute;
       top: 41px;
       left: 67px;
-      background-image: url("../img/icon-cat-slim.svg");
       width: 70px;
       height: 97px;
     }
     .programs-item--gain-weight::after {
-      content: "";
-      position: absolute;
       top: 67px;
       left: 34px;
-      background-image: url("../img/icon-cat-pro.svg");
       width: 134px;
       height: 56px;
     }

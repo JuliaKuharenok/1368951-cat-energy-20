@@ -1,7 +1,8 @@
 .socials {
   list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding-right: 62px;
+  padding-left: 62px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -26,6 +27,13 @@
 @media (min-width: $tablet-width) {
   .socials {
     padding: 0;
+    margin: 0 42px;
     border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials {
+    margin: 0 130px;
   }
 }
