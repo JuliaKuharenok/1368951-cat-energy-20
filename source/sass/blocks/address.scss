@@ -22,6 +22,9 @@
   @include font(arial, 400, 14px, 20px);
   color: $special-grey;
   background-color: $basic-light-grey;
+    &--index {
+      background-color: $basic-white;
+    }
 }
 
 .address__our-address p,

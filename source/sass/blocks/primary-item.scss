@@ -37,6 +37,10 @@
   margin-bottom: 14px;
 }
 
+.primary-item__information td:nth-child(2) {
+  text-align: right;
+}
+
 .primary-item__wrapper {
   display: flex;
   flex-direction: column;

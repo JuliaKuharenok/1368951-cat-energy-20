@@ -53,6 +53,10 @@
 @media (min-width: $desktop-width) {
   .page-main__wrapper {
      width: 84.7%;
+      &--example {
+        display: flex;
+        justify-content: space-between;
+      }
   }
 
   .page-main__container {

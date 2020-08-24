@@ -11,6 +11,7 @@
 .questions__title {
   @include font(oswald, 400, 24px, 26px);
   padding: 0;
+  background-color: $basic-white;
 }
 
 .questions label {
@@ -51,6 +52,20 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-grey;
+}
+
+.questions__decoration {
+  position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 20px;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 2px;
+      background-color: $basic-green;
+    }
 }
 
 .questions__cat-info {
