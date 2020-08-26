@@ -138,6 +138,9 @@
 .questions__personal-info input {
   flex: 1;
   margin-bottom: 18px;
+    &:focus .item__decoration {
+      fill: $basic-green;
+    }
 }
 
 .questions__personal-info label {
@@ -406,5 +409,6 @@
   padding-right: 11px;
   border: 2px solid $special-grey;
 }
+
 
 

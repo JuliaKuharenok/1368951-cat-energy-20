@@ -1,19 +1,4 @@
-/*.item__input {
-    &--email {
-      background-image: url(../img/icon-mail.svg);
-      background-position: 100%;
-      background-repeat: no-repeat;
-      width: 18px;
-      height: 13px;
-    }
-    &--phone {
-      background-image: url(../img/icon-phone.svg);
-      background-position: 100%;
-      background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
-    }
-}*/
+
 
 .item {
   position: relative;
@@ -21,7 +6,7 @@
 
 .item__decoration {
   position: absolute;
-  left: 533px;
+  left: 252px;
     &--email {
       top: 18px;
       width: 18px;
@@ -34,6 +19,16 @@
     }
 }
 
-item__input:focus-within .item__decoration {
-  background-color: $basic-green;
+@media(min-width: $tablet-width) {
+  .item__decoration {
+    left: 593px;
+  }
 }
+
+@media(min-width: $desktop-width) {
+  .item__decoration {
+    left: 532px;
+  }
+}
+
+
