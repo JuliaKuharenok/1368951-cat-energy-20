@@ -50,7 +50,8 @@
   width: 24px;
   height: 37px;
   fill: $special-light-grey;
-    &:hover {
+    &:hover,
+    &:focus {
       fill: $basic-green;
     }
     &:active {

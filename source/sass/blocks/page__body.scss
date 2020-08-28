@@ -61,6 +61,7 @@ img {
 
 @media (min-width: $desktop-width) {
   .page__body--index {
+    z-index: 1;
     background-image: url(../img/index-background-desktop@1x.jpg);
     background-position: 100% 0%;
     width: 100%;
@@ -69,6 +70,18 @@ img {
      @media (min-resolution: 2dppx) {
        background-image: url(../img/index-background-desktop@2x.jpg);
        background-size: 719px auto;
+     }
+     &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      background-color: $basic-dark-green;
+      width: 50%;
+      height: 696px;
+      background-repeat: no-repeat;
+      background-position: right;
      }
   }
 }

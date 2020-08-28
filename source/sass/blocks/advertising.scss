@@ -8,7 +8,7 @@
   height: 305px;
   background-repeat: no-repeat;
   margin-bottom: 172px;
-  background-color: $basic-green;
+  background-color: $basic-dark-green;
     @media (min-resolution: 2dppx) {
       background-image: url(../img/index-background-mobile@2x.jpg);
       background-size: 320px auto;
@@ -107,6 +107,20 @@
     padding-bottom: 50px;
     padding-left: 81px;
     padding-top: 111px;
+    position: relative;
+      &::after {
+        /*content: "";
+        position: absolute;
+        z-index: -2;
+        top: -113px;
+        right: -2.4%;
+        /*background-image: url(../img/index-background-desktop@1x.jpg);*/
+        /*background-color: $basic-dark-green;
+        width: 50%;
+        height: 696px;
+        background-repeat: no-repeat;
+        background-position: right;*/
+      }
   }
 
   .advertising__slogan {

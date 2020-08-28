@@ -59,13 +59,21 @@
     &::after {
       position: absolute;
       content: "";
-      top: 20px;
-      left: 0;
+      top: 15px;
+      left: 142px;
       z-index: -1;
-      width: 100%;
+      width: 68%;
       height: 2px;
       background-color: $basic-green;
     }
+}
+
+.questions__decoration--cat-info {
+  &::after {
+    top: 41px;
+    left: 196px;
+    width: 37%;
+  }
 }
 
 .questions__cat-info {
@@ -408,6 +416,14 @@
   padding-left: 14px;
   padding-right: 11px;
   border: 2px solid $special-grey;
+}
+
+.questions input:invalid {
+  border: 2px solid $special-error-red;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 10px;
 }
 
 
