@@ -1,12 +1,10 @@
-
-
 .item {
   position: relative;
 }
 
 .item__decoration {
   position: absolute;
-  left: 252px;
+  left: 90%;
     &--email {
       top: 18px;
       width: 18px;
@@ -21,14 +19,12 @@
 
 @media(min-width: $tablet-width) {
   .item__decoration {
-    left: 593px;
+    left: 92.8%;
   }
 }
 
 @media(min-width: $desktop-width) {
   .item__decoration {
-    left: 532px;
+    left: 93.8%;
   }
 }
-
-

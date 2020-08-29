@@ -3,15 +3,22 @@
   @include font(oswald, 400, 24px, 24px);
   margin: 0;
   margin-bottom: 35px;
-    &::after {
-      position: absolute;
-      content: "";
-      top: 15px;
-      right: -20px;
-      width: 53px;
-      height: 2px;
-      background-color: $basic-green;
-    }
+  max-width: 240px;
+  background: $basic-white;
+}
+
+.additional-goods {
+  position: relative;
+     &::after {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 15px;
+        right: -6.8%;
+        width: 100%;
+        height: 2px;
+        background-color: $basic-green;
+      }
 }
 
 .additional-goods__list {
@@ -28,45 +35,30 @@
   .additional-goods__title {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 37px;
+    padding-left: 37px;
     margin-bottom: 80px;
-      &::after,
-      &::before {
-        top: 22px;
-      }
-      &::after {
-        right: -30px;
-        width: 326px;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        left: -67px;
-        height: 2px;
-        width: 30px;
-        background-color: $basic-green;
-      }
+    max-width: 358px;
   }
   .additional-goods {
     margin-bottom: 66px;
+      &::after {
+        right: -6.1%;
+        width: 114%;
+      }
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-goods {
     margin-bottom: 55px;
+      &::after {
+        right: -43.1%;
+        width: 155%;
+      }
   }
 
   .additional-goods__title {
-    margin-left: 0;
-      &::after {
-        right: -400px;
-        width: 957px;
-      }
-      &::before {
-        left: -110px;
-        width: 70px;
-    }
+    padding-left: 0;
   }
 }
 
