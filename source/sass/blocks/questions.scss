@@ -251,8 +251,9 @@
 
   .questions__decoration {
     &::after {
+      top: 22px;
       left: -11.2%;
-      width: 120%;
+      width: 121%;
     }
   }
 
@@ -307,7 +308,7 @@
     padding-bottom: 49px;
       .questions__title {
         margin-bottom: 76px;
-        min-width: 520px;
+        min-width: 553px;
       }
   }
 
@@ -319,7 +320,7 @@
     padding-bottom: 61px;
       .questions__title {
         margin-bottom: 75px;
-        min-width: 194px;
+        min-width: 218px;
       }
   }
 
@@ -327,7 +328,7 @@
     padding-bottom: 59px;
       .questions__title {
         margin-bottom: 61px;
-        min-width: 224px;
+        min-width: 251px;
       }
   }
 
@@ -361,6 +362,7 @@
   .questions__addition .questions__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 82px;
   }
 
   .questions__personal-info .questions__list {

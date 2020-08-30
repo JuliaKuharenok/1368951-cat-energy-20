@@ -82,6 +82,10 @@
     line-height: 22px;
   }
 
+  .address__city {
+    margin-top: 10px;
+  }
+
   .address__our-address {
     top: -608px;
   }
@@ -132,6 +136,7 @@
     left: 0;
     width: 420px;
     background-color: $basic-white;
+    padding-top: 70px;
     padding-left: 77px;
     padding-right: 73px;
   }

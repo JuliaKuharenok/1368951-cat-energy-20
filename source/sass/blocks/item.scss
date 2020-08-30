@@ -23,7 +23,13 @@
 
 @media(min-width: $tablet-width) {
   .item__decoration {
-    left: 92.8%;
+    left: 94.8%;
+      &--email {
+        top: 19px;
+      }
+      &--phone {
+        top: 17px;
+      }
   }
 }
 

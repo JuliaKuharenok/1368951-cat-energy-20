@@ -37,11 +37,12 @@
     line-height: 36px;
     padding-left: 37px;
     margin-bottom: 80px;
-    max-width: 358px;
+    max-width: 373px;
   }
   .additional-goods {
     margin-bottom: 66px;
       &::after {
+        top: 23px;
         right: -6.1%;
         width: 114%;
       }
