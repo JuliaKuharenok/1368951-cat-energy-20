@@ -429,6 +429,9 @@
   padding-bottom: 12px;
   padding-left: 14px;
   padding-right: 10px;
+    & .item__decoration {
+      fill: red;
+    }
 }
 
 

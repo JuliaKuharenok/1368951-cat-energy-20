@@ -17,6 +17,10 @@
     }
 }
 
+.questions input:focus-within .item__decoration {
+  fill: green;
+}
+
 @media(min-width: $tablet-width) {
   .item__decoration {
     left: 92.8%;
