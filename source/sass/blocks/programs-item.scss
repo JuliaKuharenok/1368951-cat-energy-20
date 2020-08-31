@@ -125,6 +125,9 @@
       border-bottom: none;
       padding-bottom: 0;
       margin-bottom: 51px;
+        span {
+          padding-right: 43px;
+        }
     }
     .programs-item__link {
       font-size: 20px;
@@ -173,6 +176,9 @@
   }
   .programs-item__description {
     margin-bottom: 26px;
+      span {
+        padding-right: 0;
+      }
   }
   .programs-item__link::after {
     left: 137px;

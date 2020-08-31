@@ -1,6 +1,11 @@
 var navigation = document.querySelector('.navigation');
 var navigationToggle = document.querySelector('.navigation__toggle');
 
+var buttonBefore = document.querySelector('.slider__button--before');
+var buttonAfter = document.querySelector('.slider__button--after');
+var imageBefore = document.querySelector('.slider__item--before');
+var imageAfter = document.querySelector('.slider__item--after');
+
 navigation.classList.remove('navigation--nojs');
 
 navigationToggle.addEventListener('click', function() {
@@ -12,3 +17,14 @@ navigationToggle.addEventListener('click', function() {
     navigation.classList.remove('navigation--opened');
   }
 });
+
+buttonAfter.addEventListener('click', function() {
+  imageBefore.classList.add('visually-hidden');
+  imageAfter.classList.remove('visually-hidden');
+});
+
+buttonBefore.addEventListener('click', function() {
+  imageAfter.classList.add('visually-hidden');
+  imageBefore.classList.remove('visually-hidden');
+});
+

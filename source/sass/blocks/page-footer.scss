@@ -50,16 +50,13 @@
   width: 24px;
   height: 37px;
   fill: $special-light-grey;
-    &:hover {
+    &:hover,
+    &:focus {
       fill: $basic-green;
     }
     &:active {
       opacity: 0.3;
     }
-}
-
-.page-footer__developed a:hover .page-footer__developed svg {
-  fill: $basic-green;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,7 +65,7 @@
     display: grid;
     grid-template-rows: none;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 55px auto;
+    margin: 50px auto;
   }
 
   .page-footer__logo {
@@ -90,6 +87,6 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
       width: 84.7%;
-      margin: 61px auto;
+      margin: 55px auto;
     }
 }

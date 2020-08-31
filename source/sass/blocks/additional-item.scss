@@ -55,6 +55,18 @@
     line-height: 20px;
     margin-top: 4px;
     margin-bottom: 24px;
+      &--sweetneer {
+        min-width: 230px;
+      }
+      &--water {
+        min-width: 162px;
+      }
+      &--milk {
+        min-width: 145px;
+      }
+      &--vitamins {
+        min-width: 220px;
+      }
   }
 
   .additional-item__price p {
@@ -82,12 +94,15 @@
     height: 72px;
     width: 895px;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 26px;
     padding-left: 0;
     padding-right: 34px;
     padding-bottom: 0;
     margin-bottom: -28px;
+  }
+
+  .additional-item__wrapper {
+    flex: 1;
   }
 
   .additional-item__order-button {
@@ -98,7 +113,8 @@
   }
 
   .additional-item__information  {
-
+    margin-right: 41px;
+    min-width: 286px;
   }
 }
 

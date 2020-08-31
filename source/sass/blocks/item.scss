@@ -1,16 +1,40 @@
-.item__input {
+.item {
+  position: relative;
+}
+
+.item__decoration {
+  position: absolute;
+  left: 90%;
     &--email {
-      background-image: url(../img/icon-mail.svg);
-      background-position: 100%;
-      background-repeat: no-repeat;
+      top: 18px;
       width: 18px;
       height: 13px;
     }
     &--phone {
-      background-image: url(../img/icon-phone.svg);
-      background-position: 100%;
-      background-repeat: no-repeat;
+      top: 14px;
       width: 20px;
       height: 20px;
     }
+}
+
+.questions input:focus-within .item__decoration {
+  fill: green;
+}
+
+@media(min-width: $tablet-width) {
+  .item__decoration {
+    left: 94.8%;
+      &--email {
+        top: 19px;
+      }
+      &--phone {
+        top: 17px;
+      }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .item__decoration {
+    left: 93.8%;
+  }
 }

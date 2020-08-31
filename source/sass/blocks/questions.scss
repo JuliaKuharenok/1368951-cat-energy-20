@@ -11,6 +11,7 @@
 .questions__title {
   @include font(oswald, 400, 24px, 26px);
   padding: 0;
+  background-color: $basic-white;
 }
 
 .questions label {
@@ -53,6 +54,20 @@
   color: $special-grey;
 }
 
+.questions__decoration {
+  position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: 6.8%;
+      z-index: -1;
+      width: 100%;
+      height: 2px;
+      background-color: $basic-green;
+    }
+}
+
 .questions__cat-info {
   border: none;
   padding: 0;
@@ -77,6 +92,7 @@
   padding: 0;
   margin: 0;
   padding-top: 26px;
+  margin-bottom: 26px;
 }
 
 .questions__choose-program label {
@@ -115,14 +131,17 @@
   margin: 0;
   padding: 0;
     .questions__title {
-       padding-top: 26px;
        margin-bottom: 32px;
+       max-width: 200px;
     }
 }
 
 .questions__personal-info input {
   flex: 1;
   margin-bottom: 18px;
+    &:focus .item__decoration {
+      fill: $basic-green;
+    }
 }
 
 .questions__personal-info label {
@@ -137,6 +156,7 @@
   padding-bottom: 23px;
     .questions__title {
       margin-bottom: 34px;
+      min-width: 138px;
     }
 }
 
@@ -147,6 +167,7 @@
   padding-bottom: 19px;
     .questions__title {
       margin-bottom: 39px;
+      min-width: 151px;
     }
 }
 
@@ -228,6 +249,14 @@
     @include font(oswald, 400, 20px, 30px);
   }
 
+  .questions__decoration {
+    &::after {
+      top: 22px;
+      left: -11.2%;
+      width: 121%;
+    }
+  }
+
   .questions__addition .questions__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -253,6 +282,7 @@
     padding-top: 29px;
     padding-left: 28px;
     padding-bottom: 6px;
+    margin-bottom: 75px;
   }
 
   .questions__choose-program label {
@@ -277,8 +307,8 @@
   .questions__personal-info {
     padding-bottom: 49px;
       .questions__title {
-        padding-top: 75px;
         margin-bottom: 76px;
+        min-width: 553px;
       }
   }
 
@@ -290,6 +320,7 @@
     padding-bottom: 61px;
       .questions__title {
         margin-bottom: 75px;
+        min-width: 218px;
       }
   }
 
@@ -297,6 +328,7 @@
     padding-bottom: 59px;
       .questions__title {
         margin-bottom: 61px;
+        min-width: 251px;
       }
   }
 
@@ -330,6 +362,7 @@
   .questions__addition .questions__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 82px;
   }
 
   .questions__personal-info .questions__list {
@@ -391,5 +424,17 @@
   padding-right: 11px;
   border: 2px solid $special-grey;
 }
+
+.questions input:invalid {
+  border: 2px solid $special-error-red;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 10px;
+    & .item__decoration {
+      fill: red;
+    }
+}
+
 
 

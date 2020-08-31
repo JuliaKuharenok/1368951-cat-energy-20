@@ -4,6 +4,12 @@
   padding-bottom: 36px;
 }
 
+.example__cover {
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .example__title {
   @include font(oswald, 400, 36px, 40px);
   margin: 0;
@@ -24,7 +30,6 @@
 .example__results {
   border: 1px solid $basic-dark-grey;
   border-radius: 3px;
-  border-bottom: none;
   text-align: center;
   width: 122px;
   margin: 0;
@@ -34,15 +39,22 @@
   @include font(oswald, 400, 24px, 24px);
   text-transform: uppercase;
   padding-top: 14px;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .example__results dd {
   @include font(arial, 400, 12px, 12px);
   color: $special-grey;
-  margin: 0;
-  margin-left: 20px;
+  margin-top: -7px;
   max-width: 80px;
+  position: absolute;
+  z-index: 2;
+  background-color: $special-background-grey;
+}
+
+.example__results--weight,
+.example__results--time {
+  margin-left: 20px;
 }
 
 .example__expenses {
@@ -50,12 +62,12 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-top: 19px;
-  margin-bottom: 42px;
+  margin-top: 34px;
+  margin-bottom: 33px;
 }
 
 .example__toggles {
-  margin-top: 53px;
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   margin-left: 44px;
@@ -64,9 +76,13 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: $basic-white;
+    background: linear-gradient($basic-white 57%, $special-background-grey 43%);
     padding-top: 43px;
     padding-bottom: 66px;
+  }
+
+  .example__cover {
+    width: 92.2%;
   }
 
   .example__title {
@@ -89,14 +105,24 @@
   .example__results dt {
     font-size: 30px;
     line-height: 37px;
+    padding-bottom: 18px;
   }
 
   .example__results dd {
     font-size: 14px;
     line-height: 14px;
-    max-width: 142px;
+    margin-top: -6px;
+    background-color: $basic-white;
+  }
+
+  .example__results--weight {
+    margin-left: 20px;
+    min-width: 115px;
+  }
+
+  .example__results--time {
     margin-left: 9px;
-    margin-top: 4px;
+    min-width: 142px;
   }
 
   .example__container {
@@ -110,10 +136,11 @@
     max-width: 174px;
     text-align: right;
     margin-top: 11px;
+    margin-bottom: 0;
   }
 
   .example__toggles {
-    margin-top: 68px;
+    margin-top: 13px;
     margin-right: 69px;
     margin-left: 68px;
   }
@@ -121,10 +148,17 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    background: linear-gradient($basic-white 26%, $special-background-grey 18%);
     display: flex;
     justify-content: space-between;
     padding-top: 23px;
     padding-bottom: 36px;
+  }
+
+  .example__cover {
+     width: 84.7%;
+     display: flex;
+     justify-content: space-between;
   }
 
   .example__container {
@@ -148,16 +182,20 @@
   .example__expenses {
     max-width: max-content;
     text-align: left;
-    margin-top: 52px;
+    margin-top: 59px;
     margin-bottom: 37px;
       & span {
         margin-left: 59px;
       }
   }
   .example__toggles {
-    margin-top: -20px;
+    margin-top: 31px;
     margin-right: 0;
-    margin-left: 120px;
+    margin-left: 231px;
+  }
+
+  .example__results dd {
+    background-color: $special-background-grey;
   }
 }
 
