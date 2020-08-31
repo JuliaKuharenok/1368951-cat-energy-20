@@ -27,13 +27,15 @@
 @media (min-width: $tablet-width) {
   .socials {
     padding: 0;
-    margin: 0 42px;
+    margin-left: 40px;
+    margin-right: 42px;
     border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .socials {
-    margin: 0 130px;
+    margin-left: 125px;
+    margin-right: 130px;
   }
 }

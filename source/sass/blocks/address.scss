@@ -83,7 +83,9 @@
   }
 
   .address__city {
-    margin-top: 10px;
+    font-weight: 400;
+    display: block;
+    margin-top: 14px;
   }
 
   .address__our-address {
@@ -139,6 +141,7 @@
     padding-top: 70px;
     padding-left: 77px;
     padding-right: 73px;
+    padding-bottom: 60px;
   }
 
   .address__our-address span {
