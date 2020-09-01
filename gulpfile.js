@@ -77,6 +77,15 @@ const images = () => {
 
 exports.images = images;
 
+// WebP
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+}
+exports.webp = createWebp;
+
 // Sprite
 
 const sprite = () => {
