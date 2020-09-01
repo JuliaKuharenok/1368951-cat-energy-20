@@ -22,13 +22,20 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+  .pipe(gulp.dest("build"))
+}
 
 // Server
 
@@ -99,7 +106,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
+ return del("build");
 };
 
 exports.clean = clean;
@@ -107,11 +114,11 @@ exports.clean = clean;
 // Build
 
 const build = gulp.series(
-      "clean",
-      "copy",
-      "css",
-      "sprite",
-      "html"
+      clean,
+      copy,
+      styles,
+      sprite,
+      html
 );
 
 exports.build = build;

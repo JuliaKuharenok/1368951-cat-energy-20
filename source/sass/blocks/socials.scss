@@ -31,6 +31,21 @@
     margin-right: 42px;
     border-bottom: none;
   }
+
+  .socials__link--vk svg {
+     width: 30px;
+     height: 17px;
+  }
+
+  .socials__link--instagram svg {
+    width: 30px;
+    height: 23px;
+  }
+
+  .socials__link--facebook svg {
+    width: 20px;
+    height: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {

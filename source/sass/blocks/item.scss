@@ -17,8 +17,12 @@
     }
 }
 
-.questions input:focus-within .item__decoration {
-  fill: green;
+.item__input:invalid~.item__decoration {
+  fill: $special-error-red;
+}
+
+.item__input:focus~.item__decoration {
+  fill: $basic-green;
 }
 
 @media(min-width: $tablet-width) {
