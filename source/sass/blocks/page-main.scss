@@ -33,9 +33,10 @@
     line-height: 60px;
     margin-top: 69px;
     margin-bottom: 164px;
-      &--form {
-        margin-bottom: 56px;
-      }
+
+    &--form {
+      margin-bottom: 56px;
+    }
   }
 
   .page-main__description {
@@ -52,11 +53,12 @@
 
 @media (min-width: $desktop-width) {
   .page-main__wrapper {
-     width: 84.7%;
-      &--example {
-        display: flex;
-        justify-content: space-between;
-      }
+    width: 84.7%;
+
+    &--example {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .page-main__container {

@@ -1,6 +1,7 @@
 .slider__button {
   border: none;
   background-color: transparent;
+
   @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
   padding: 0;
@@ -44,10 +45,11 @@
     line-height: 30px;
     padding-bottom: 3px;
     border-bottom: 1px dotted $basic-dark-grey;
-      &:hover,
-      &:focus {
-        border-bottom: 1px solid $special-light-grey;
-      }
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $special-light-grey;
+    }
   }
 
   .slider__item {
@@ -63,39 +65,43 @@
   .slider__bar {
     width: 428px;
     height: 8px;
-    background: #DCDCDC;
+    background: #dcdcdc;
     border: none;
   }
 
   .slider__toggle {
     position: absolute;
     border-radius: 50%;
-      &--big {
-        top: -12px;
-        left: 198px;
-        width: 34px;
-        height: 34px;
-        background: $basic-white;
-        border: 1px solid $basic-dark-grey;
-        filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
-          &:hover,
-          &:focus {
-            filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
-          }
-          &:active {
-            filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
-            border: 1px solid $basic-green;
-          }
-    }
-      &--small {
-        top: 2px;
-        left: 212px;
-        width: 8px;
-        height: 8px;
-        background: $basic-green;
-        z-index: 3;
-        cursor: pointer;
+
+    &--big {
+      top: -12px;
+      left: 198px;
+      width: 34px;
+      height: 34px;
+      background: $basic-white;
+      border: 1px solid $basic-dark-grey;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+      &:hover,
+      &:focus {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
       }
+
+      &:active {
+        filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+        border: 1px solid $basic-green;
+      }
+    }
+
+    &--small {
+      top: 2px;
+      left: 212px;
+      width: 8px;
+      height: 8px;
+      background: $basic-green;
+      z-index: 3;
+      cursor: pointer;
+    }
   }
 }
 
@@ -104,13 +110,4 @@
     margin-top: -51px;
     margin-left: 146px;
   }
-
 }
-
-
-
-
-
-
-
-

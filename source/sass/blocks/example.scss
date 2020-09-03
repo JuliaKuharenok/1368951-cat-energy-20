@@ -50,6 +50,7 @@
   position: absolute;
   z-index: 2;
   background-color: $special-background-grey;
+  border: none;
 }
 
 .example__results--weight,
@@ -156,9 +157,9 @@
   }
 
   .example__cover {
-     width: 84.7%;
-     display: flex;
-     justify-content: space-between;
+    width: 84.7%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .example__container {
@@ -184,10 +185,12 @@
     text-align: left;
     margin-top: 59px;
     margin-bottom: 37px;
-      & span {
-        margin-left: 59px;
-      }
+
+    & span {
+      margin-left: 59px;
+    }
   }
+
   .example__toggles {
     margin-top: 31px;
     margin-right: 0;
@@ -198,7 +201,3 @@
     background-color: $special-background-grey;
   }
 }
-
-
-
-

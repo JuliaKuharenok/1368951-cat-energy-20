@@ -27,4 +27,3 @@ buttonBefore.addEventListener('click', function() {
   imageAfter.classList.add('visually-hidden');
   imageBefore.classList.remove('visually-hidden');
 });
-

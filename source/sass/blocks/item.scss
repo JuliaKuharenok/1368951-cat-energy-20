@@ -5,39 +5,43 @@
 .item__decoration {
   position: absolute;
   left: 90%;
-    &--email {
-      top: 18px;
-      width: 18px;
-      height: 13px;
-    }
-    &--phone {
-      top: 14px;
-      width: 20px;
-      height: 20px;
-    }
-}
 
-.item__input:invalid~.item__decoration {
-  fill: $special-error-red;
-}
+  &--email {
+    top: 18px;
+    width: 18px;
+    height: 13px;
+  }
 
-.item__input:focus~.item__decoration {
-  fill: $basic-green;
-}
-
-@media(min-width: $tablet-width) {
-  .item__decoration {
-    left: 94.8%;
-      &--email {
-        top: 19px;
-      }
-      &--phone {
-        top: 17px;
-      }
+  &--phone {
+    top: 14px;
+    width: 20px;
+    height: 20px;
   }
 }
 
-@media(min-width: $desktop-width) {
+.item__input:invalid ~ .item__decoration {
+  fill: $special-error-red;
+}
+
+.item__input:focus ~ .item__decoration {
+  fill: $basic-green;
+}
+
+@media (min-width: $tablet-width) {
+  .item__decoration {
+    left: 94.8%;
+
+    &--email {
+      top: 19px;
+    }
+
+    &--phone {
+      top: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
   .item__decoration {
     left: 93.8%;
   }

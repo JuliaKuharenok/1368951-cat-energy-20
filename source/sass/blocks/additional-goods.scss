@@ -1,5 +1,6 @@
 .additional-goods__title {
   position: relative;
+
   @include font(oswald, 400, 24px, 24px);
   margin: 0;
   margin-bottom: 35px;
@@ -9,16 +10,17 @@
 
 .additional-goods {
   position: relative;
-     &::after {
-        position: absolute;
-        z-index: -1;
-        content: "";
-        top: 15px;
-        right: -6.8%;
-        width: 100%;
-        height: 2px;
-        background-color: $basic-green;
-      }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 15px;
+    right: -6.8%;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+  }
 }
 
 .additional-goods__list {
@@ -26,9 +28,10 @@
   padding-left: 0;
   margin: 0;
   margin-bottom: 38px;
-    &:last-child {
-      border-bottom: 1px solid $basic-dark-grey;
-    }
+
+  &:last-child {
+    border-bottom: 1px solid $basic-dark-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,28 +42,29 @@
     margin-bottom: 80px;
     max-width: 373px;
   }
+
   .additional-goods {
     margin-bottom: 66px;
-      &::after {
-        top: 23px;
-        right: -6.1%;
-        width: 114%;
-      }
+
+    &::after {
+      top: 23px;
+      right: -6.1%;
+      width: 114%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-goods {
     margin-bottom: 55px;
-      &::after {
-        right: -43.1%;
-        width: 155%;
-      }
+
+    &::after {
+      right: -43.1%;
+      width: 155%;
+    }
   }
 
   .additional-goods__title {
     padding-left: 0;
   }
 }
-
-

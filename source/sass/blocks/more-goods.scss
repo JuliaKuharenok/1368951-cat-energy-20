@@ -3,7 +3,7 @@
   flex-direction: column;
   padding-top: 74px;
   padding-bottom: 22px;
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .more-goods__description {
@@ -16,26 +16,29 @@
 
 .more-goods__title {
   position: relative;
+
   @include font(oswald, 400, 16px, 20px);
   text-transform: uppercase;
   color: $special-black;
   margin: 0;
   margin-bottom: 8px;
   text-align: center;
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      top: -39px;
-      left: 50%;
-      width: 30px;
-      height: 2px;
-      background-color: #D3D3D3;
-      margin-left: -15px;
-    }
-    &::after {
-      transform: rotate(90deg);
-    }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: -39px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    margin-left: -15px;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .more-goods__to-all {
@@ -49,7 +52,7 @@
 @media (min-width: $tablet-width) {
   .more-goods {
     align-items: center;
-    border: 2px solid #D3D3D3;
+    border: 2px solid #d3d3d3;
     min-width: 324px;
     box-sizing: border-box;
     padding-left: 41px;
@@ -57,28 +60,33 @@
     padding-top: 160px;
     padding-bottom: 37px;
   }
+
   .more-goods__description {
     font-size: 16px;
     line-height: 18px;
     max-width: 167px;
     margin-bottom: 85px;
   }
+
   .more-goods__title {
     font-size: 20px;
     line-height: 22px;
     max-width: 134px;
     margin: 0 auto 24px auto;
-      &::before,
-      &::after {
-        top: -80px;
-        left: 37px;
-        width: 60px;
-        margin-left: 0;
-      }
-      &::after {
-        transform: rotate(90deg);
-      }
+
+    &::before,
+    &::after {
+      top: -80px;
+      left: 37px;
+      width: 60px;
+      margin-left: 0;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
   }
+
   .more-goods__to-all {
     font-size: 16px;
     line-height: 14px;
@@ -103,7 +111,3 @@
     padding: 11px 0;
   }
 }
-
-
-
-

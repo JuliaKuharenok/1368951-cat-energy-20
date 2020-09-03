@@ -2,7 +2,7 @@
   display: grid;
   justify-items: center;
   position: relative;
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
   background-color: $basic-green;
   width: 100%;
@@ -13,19 +13,21 @@
   padding-bottom: 43px;
   padding-left: 58px;
   margin-bottom: 34px;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 59px;
-      left: 50%;
-      margin-left: -42px;
-      background-image: url(../img/icon-gift.svg);
-      width: 78px;
-      height: 80px;
-    }
-     @media (min-resolution: 2dppx) {
-       background-image: url(../img/gift-photo-mobile@2x.jpg);
-     }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    margin-left: -42px;
+    background-image: url("../img/icon-gift.svg");
+    width: 78px;
+    height: 80px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .gift-information__description {
@@ -38,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .gift-information {
-    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: cover;
     width: 100%;
     height: 200px;
@@ -47,15 +49,17 @@
     padding-bottom: 69px;
     padding-left: 59.7%;
     margin-bottom: 75px;
-      &::after {
-        top: 57px;
-        left: 78px;
-        margin-left: 0;
-      }
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/gift-photo-tablet@2x.jpg);
-        background-repeat: no-repeat;
-      }
+
+    &::after {
+      top: 57px;
+      left: 78px;
+      margin-left: 0;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 
   .gift-information__description {
@@ -65,7 +69,7 @@
 
 @media (min-width: $desktop-width) {
   .gift-information {
-    background-image: url(../img/gift-photo-desktop@1x.jpg);
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     width: 245px;
     height: 289px;
     text-align: center;
@@ -75,13 +79,15 @@
     padding-left: 41px;
     margin-top: 114px;
     margin-bottom: 87px;
-      &::after {
-        left: 85px;
-      }
-     @media (min-resolution: 2dppx) {
-       background-image: url(../img/gift-photo-desktop@2x.jpg);
-       background-size: 245px auto;
-     }
+
+    &::after {
+      left: 85px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 
   .gift-information__description {

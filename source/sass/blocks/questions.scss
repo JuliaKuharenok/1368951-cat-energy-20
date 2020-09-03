@@ -46,26 +46,24 @@
 
 .questions input::placeholder,
 .questions textarea::placeholder {
-  font-family: oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  @include font(oswald, 400, 16px, 18px);
   text-transform: uppercase;
   color: $special-grey;
 }
 
 .questions__decoration {
   position: relative;
-    &::after {
-      position: absolute;
-      content: "";
-      top: 15px;
-      left: 6.8%;
-      z-index: -1;
-      width: 100%;
-      height: 2px;
-      background-color: $basic-green;
-    }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 6.8%;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: $basic-green;
+  }
 }
 
 .questions__cat-info {
@@ -118,7 +116,7 @@
 .questions__input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -37px;
   width: 13px;
   height: 13px;
@@ -130,18 +128,20 @@
   border: none;
   margin: 0;
   padding: 0;
-    .questions__title {
-       margin-bottom: 32px;
-       max-width: 200px;
-    }
+
+  .questions__title {
+    margin-bottom: 32px;
+    max-width: 200px;
+  }
 }
 
 .questions__personal-info input {
   flex: 1;
   margin-bottom: 18px;
-    &:focus .item__decoration {
-      fill: $basic-green;
-    }
+
+  &:focus .item__decoration {
+    fill: $basic-green;
+  }
 }
 
 .questions__personal-info label {
@@ -154,10 +154,11 @@
   margin: 0;
   padding: 0;
   padding-bottom: 23px;
-    .questions__title {
-      margin-bottom: 34px;
-      min-width: 138px;
-    }
+
+  .questions__title {
+    margin-bottom: 34px;
+    min-width: 138px;
+  }
 }
 
 .questions__addition {
@@ -165,10 +166,11 @@
   margin: 0;
   padding: 0;
   padding-bottom: 19px;
-    .questions__title {
-      margin-bottom: 42px;
-      min-width: 151px;
-    }
+
+  .questions__title {
+    margin-bottom: 42px;
+    min-width: 151px;
+  }
 }
 
 .questions__addition label {
@@ -197,24 +199,24 @@
   left: -39px;
   width: 18px;
   height: 14px;
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
 }
 
 .questions__input-radio:hover + label::before,
 .questions__input-checkbox:hover + label::before {
-  border: 1px solid #BABABA;
+  border: 1px solid #bababa;
 }
 
 .questions__input-radio:focus + label::before,
 .questions__input-checkbox:focus + label::before {
   outline: 2px solid blue;
-  border: 1px solid #BABABA;
+  border: 1px solid #bababa;
 }
 
 .questions__input-radio:disabled + label::before,
 .questions__input-radio:checked:disabled + label::after,
 .questions__input-checkbox:disabled + label::before,
-.questions__input-checkbox:checked:disabled + label::after{
+.questions__input-checkbox:checked:disabled + label::after {
   opacity: 0.3;
   pointer-events: none;
 }
@@ -224,10 +226,12 @@
     font-size: 36px;
     line-height: 36px;
   }
+
   .questions label {
     font-size: 20px;
     line-height: 30px;
   }
+
   .questions input {
     @include font(oswald, 400, 20px, 30px);
     padding-top: 13px;
@@ -235,6 +239,7 @@
     padding-left: 15px;
     padding-right: 11px;
   }
+
   .questions textarea {
     @include font(oswald, 400, 20px, 30px);
     min-height: 174px;
@@ -306,10 +311,11 @@
 
   .questions__personal-info {
     padding-bottom: 49px;
-      .questions__title {
-        margin-bottom: 76px;
-        min-width: 553px;
-      }
+
+    .questions__title {
+      margin-bottom: 76px;
+      min-width: 553px;
+    }
   }
 
   .questions__personal-info input {
@@ -318,23 +324,25 @@
 
   .questions__comment {
     padding-bottom: 61px;
-      .questions__title {
-        margin-bottom: 75px;
-        min-width: 218px;
-      }
+
+    .questions__title {
+      margin-bottom: 75px;
+      min-width: 218px;
+    }
   }
 
   .questions__addition {
     padding-bottom: 59px;
-      .questions__title {
-        margin-bottom: 61px;
-        min-width: 251px;
-      }
+
+    .questions__title {
+      margin-bottom: 61px;
+      min-width: 251px;
+    }
   }
 
   .questions__addition label {
-     margin-left: 59px;
-     margin-bottom: 0px;
+    margin-left: 59px;
+    margin-bottom: 0;
   }
 
   .questions__input-checkbox + label::before {
@@ -348,7 +356,6 @@
     top: 9px;
     left: -48px;
   }
-
 
   .form__submit-button {
     font-size: 20px;
@@ -376,23 +383,27 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
+
   .questions__choose-program {
     margin-top: 66px;
     margin-bottom: 70px;
   }
+
   .questions__personal-info {
     padding-bottom: 49px;
-      .questions__title {
-        padding-top: 0;
-        margin-bottom: 74px;
-      }
+
+    .questions__title {
+      padding-top: 0;
+      margin-bottom: 74px;
+    }
   }
 
   .questions__addition {
     padding-bottom: 65px;
-      .questions__title {
-        margin-bottom: 65px;
-      }
+
+    .questions__title {
+      margin-bottom: 65px;
+    }
   }
 
   .form__submit-button {
@@ -432,6 +443,3 @@
   padding-left: 14px;
   padding-right: 10px;
 }
-
-
-

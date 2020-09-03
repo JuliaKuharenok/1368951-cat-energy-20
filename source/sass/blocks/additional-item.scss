@@ -35,7 +35,7 @@
   text-align: center;
 }
 
-@media (min-width: $tablet-width)  {
+@media (min-width: $tablet-width) {
   .additional-item {
     border: 1px solid $basic-dark-grey;
     padding-top: 25px;
@@ -55,18 +55,22 @@
     line-height: 20px;
     margin-top: 4px;
     margin-bottom: 24px;
-      &--sweetneer {
-        min-width: 230px;
-      }
-      &--water {
-        min-width: 162px;
-      }
-      &--milk {
-        min-width: 145px;
-      }
-      &--vitamins {
-        min-width: 220px;
-      }
+
+    &--sweetneer {
+      min-width: 230px;
+    }
+
+    &--water {
+      min-width: 162px;
+    }
+
+    &--milk {
+      min-width: 145px;
+    }
+
+    &--vitamins {
+      min-width: 220px;
+    }
   }
 
   .additional-item__price p {
@@ -85,7 +89,7 @@
   }
 }
 
-@media (min-width: $desktop-width)  {
+@media (min-width: $desktop-width) {
   .additional-item {
     border-top: 1px solid $basic-dark-grey;
     border-bottom: none;
@@ -112,14 +116,8 @@
     width: auto;
   }
 
-  .additional-item__information  {
+  .additional-item__information {
     margin-right: 41px;
     min-width: 286px;
   }
 }
-
-
-
-
-
-
